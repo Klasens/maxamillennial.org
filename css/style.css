@@ -413,6 +413,18 @@ h2 {
     background-image: linear-gradient(to right, black 0 20%, rgba(0, 0, 0, 0) 25%), url("../img/chapter3.jpg");
     background-repeat: no-repeat;
     background-position: 50% 45%; }
+  .chapter-landing--c4 {
+    background-image: linear-gradient(to right, black 0 20%, rgba(0, 0, 0, 0) 25% 55%, black 85%), url("../img/chapter4.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 45%; }
+  .chapter-landing--c5 {
+    background-image: linear-gradient(to right, black 0 20%, rgba(0, 0, 0, 0) 25% 55%, black 85%), url("../img/chapter5.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 45%; }
+  .chapter-landing--c6 {
+    background-image: linear-gradient(to right, black 0 20%, rgba(0, 0, 0, 0) 25%), url("../img/chapter3-2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 45%; }
 
 .chapter-content {
   margin: 3rem auto;
@@ -449,6 +461,15 @@ h2 {
       bottom: 40%;
       left: 3rem; }
     .title-landing--c3 {
+      bottom: 40%;
+      left: 3rem; }
+    .title-landing--c4 {
+      bottom: 40%;
+      left: 3rem; }
+    .title-landing--c5 {
+      bottom: 40%;
+      left: 3rem; }
+    .title-landing--c6 {
       bottom: 40%;
       left: 3rem; }
     .title-landing > *:not(:first-child) {

@@ -64,6 +64,38 @@ h2 {
       background-repeat: no-repeat;
       background-position: 50% 45%;
     }
+    &--c4 {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 0 20%,
+          rgba(0, 0, 0, 0) 25% 55%,
+          rgba(0, 0, 0, 1) 85%
+        ),
+        url('../img/chapter4.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 45%;
+    }
+    &--c5 {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 0 20%,
+          rgba(0, 0, 0, 0) 25% 55%,
+          rgba(0, 0, 0, 1) 85%
+        ),
+        url('../img/chapter5.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 45%;
+    }
+    &--c6 {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 0 20%,
+          rgba(0, 0, 0, 0) 25%
+        ),
+        url('../img/chapter3-2.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 45%;
+    }
   }
 
   &-content {
@@ -111,6 +143,18 @@ h2 {
       left: 3rem;
     }
     &--c3 {
+      bottom: 40%;
+      left: 3rem;
+    }
+    &--c4 {
+      bottom: 40%;
+      left: 3rem;
+    }
+    &--c5 {
+      bottom: 40%;
+      left: 3rem;
+    }
+    &--c6 {
       bottom: 40%;
       left: 3rem;
     }
