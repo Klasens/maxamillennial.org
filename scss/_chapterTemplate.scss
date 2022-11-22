@@ -89,7 +89,7 @@ h2 {
             to right,
             rgba(0, 0, 0, 1) 20%,
             rgba(0, 0, 0, 0) 25% 55%,
-            rgba(0, 0, 0, 1) 80%
+            rgba(0, 0, 0, 1) 78%
           ),
           url('../img/chapter2.jpg');
       }
@@ -117,8 +117,8 @@ h2 {
         background-image: linear-gradient(
             to right,
             rgba(0, 0, 0, 1) 25%,
-            rgba(0, 0, 0, 0) 30% 85%,
-            rgba(0, 0, 0, 1) 90%
+            rgba(0, 0, 0, 0) 30% 80%,
+            rgba(0, 0, 0, 1) 85%
           ),
           url('../img/chapter3.jpg');
       }
@@ -202,7 +202,7 @@ h2 {
             to right,
             rgba(0, 0, 0, 1) 20%,
             rgba(0, 0, 0, 0) 25% 65%,
-            rgba(0, 0, 0, 1) 80%
+            rgba(0, 0, 0, 1) 78%
           ),
           url('../img/chapter3-2.jpg');
       }
@@ -250,13 +250,14 @@ h2 {
 .title {
   display: flex;
   flex-direction: column;
-  @include respond(break-1000) {
-    flex-direction: row;
-    align-items: center;
-  }
+
   &-landing {
     position: absolute;
     color: $color-white;
+    @include respond(break-1000) {
+      flex-direction: row;
+      align-items: center;
+    }
     &--prologue {
       bottom: 40%;
       left: 6rem;
@@ -321,6 +322,17 @@ h2 {
   }
   &-chapterTitle {
     text-align: center;
+
+    &--c5 {
+      @include respond(break-greater-1400) {
+        width: 80%;
+      }
+    }
+    &--c6 {
+      @include respond(break-greater-1400) {
+        width: 50%;
+      }
+    }
   }
   &-authorName {
     font-size: 1.8rem;
