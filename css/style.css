@@ -1057,8 +1057,7 @@ h2 {
     @media (max-width: 62.5em) {
       .title-landing {
         flex-direction: row;
-        align-items: center;
-        width: 75%; } }
+        align-items: center; } }
     .title-landing--prologue {
       bottom: 40%;
       left: 6rem;
