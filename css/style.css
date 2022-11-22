@@ -959,8 +959,9 @@ h2 {
         background-image: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 25% 65%, black 78%), url("../img/chapter3-2.jpg"); } }
     @media (max-width: 62.5em) {
       .chapter-landing--c6 {
+        background-size: contain;
         background-position: 75% 45%;
-        background-image: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0) 25% 55%), url("../img/chapter3-2.jpg"); } }
+        background-image: linear-gradient(to top, black 35%, rgba(0, 0, 0, 0) 40% 70%, black 75%), url("../img/chapter3-2.jpg"); } }
 
 .chapter-content {
   margin: 3rem auto;
