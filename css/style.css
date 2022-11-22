@@ -48,7 +48,7 @@ html {
   color: #333333;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 62.5%;
-  overflow-x: hidden; }
+  overflow-x: hidden !important; }
 
 a {
   color: inherit;
