@@ -260,6 +260,7 @@ h2 {
     @include respond(break-1000) {
       flex-direction: row;
       align-items: center;
+      width: 75%;
     }
     &--prologue {
       bottom: 40%;
