@@ -698,7 +698,8 @@ h2 {
         background-image: linear-gradient(to right, black 25%, rgba(0, 0, 0, 0) 25% 75%, black 75%), url("../img/chapter1.jpg"); } }
     @media (max-width: 62.5em) {
       .chapter-landing--c1 {
-        background-image: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0) 25% 55%), url("../img/chapter1.jpg"); } }
+        background-size: contain;
+        background-image: linear-gradient(to top, black 30%, rgba(0, 0, 0, 0) 40% 65%, black 75%), url("../img/chapter1.jpg"); } }
   .chapter-landing--c2 {
     background-image: linear-gradient(to right, black 0 25%, rgba(0, 0, 0, 0) 30% 90%, black 95%), url("../img/chapter2.jpg");
     background-repeat: no-repeat;
@@ -774,8 +775,8 @@ h2 {
     @media (max-width: 62.5em) {
       .chapter-landing--c2 {
         background-position: 80% 45%;
-        background-size: cover;
-        background-image: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0) 25% 55%), url("../img/chapter2.jpg"); } }
+        background-size: contain;
+        background-image: linear-gradient(to top, black 30%, rgba(0, 0, 0, 0) 40% 65%, black 75%), url("../img/chapter2.jpg"); } }
   .chapter-landing--c3 {
     background-image: linear-gradient(to right, black 0 25%, rgba(0, 0, 0, 0) 30% 90%, black 95%), url("../img/chapter3.jpg");
     background-repeat: no-repeat;
@@ -849,7 +850,8 @@ h2 {
         background-image: linear-gradient(to right, black 25%, rgba(0, 0, 0, 0) 30% 80%, black 85%), url("../img/chapter3.jpg"); } }
     @media (max-width: 62.5em) {
       .chapter-landing--c3 {
-        background-image: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0) 25% 55%), url("../img/chapter3.jpg"); } }
+        background-size: contain;
+        background-image: linear-gradient(to top, black 30%, rgba(0, 0, 0, 0) 40% 65%, black 75%), url("../img/chapter3.jpg"); } }
   .chapter-landing--c4 {
     background-image: linear-gradient(to right, black 0 20%, rgba(0, 0, 0, 0) 25% 55%, black 85%), url("../img/chapter4.jpg");
     background-repeat: no-repeat;
@@ -923,7 +925,8 @@ h2 {
         background-image: linear-gradient(to right, black 35%, rgba(0, 0, 0, 0) 45% 65%, black 75%), url("../img/chapter4.jpg"); } }
     @media (max-width: 62.5em) {
       .chapter-landing--c4 {
-        background-image: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0) 25% 55%), url("../img/chapter4.jpg"); } }
+        background-size: contain;
+        background-image: linear-gradient(to top, black 30%, rgba(0, 0, 0, 0) 40% 65%, black 75%), url("../img/chapter4.jpg"); } }
   .chapter-landing--c5 {
     background-image: linear-gradient(to right, black 0 20%, rgba(0, 0, 0, 0) 25% 55%, black 85%), url("../img/chapter5.jpg");
     background-repeat: no-repeat;
@@ -997,7 +1000,8 @@ h2 {
         background-image: linear-gradient(to right, black 25%, rgba(0, 0, 0, 0) 30% 70%, black 75%), url("../img/chapter5.jpg"); } }
     @media (max-width: 62.5em) {
       .chapter-landing--c5 {
-        background-image: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0) 25% 55%), url("../img/chapter5.jpg"); } }
+        background-size: contain;
+        background-image: linear-gradient(to top, black 30%, rgba(0, 0, 0, 0) 40% 65%, black 75%), url("../img/chapter5.jpg"); } }
   .chapter-landing--c6 {
     background-image: linear-gradient(to right, black 0 25%, rgba(0, 0, 0, 0) 30% 90%, black 95%), url("../img/chapter3-2.jpg");
     background-repeat: no-repeat;
@@ -1172,6 +1176,7 @@ h2 {
     @media (max-width: 62.5em) {
       .title-landing {
         top: 1rem;
+        left: 50%;
         align-items: center;
         width: 80%;
         overflow: hidden; } }
@@ -1477,7 +1482,7 @@ h2 {
    *=============================================**/ }
       @media (max-width: 62.5em) {
         .title-landing > *:not(:first-child) {
-          margin-top: 0;
+          margin-top: 3px;
           margin-left: 0rem; } }
   .title-content {
     color: #333333; }
@@ -1485,13 +1490,155 @@ h2 {
     text-align: center; }
     .title-chapterTitle--c2 {
       text-align: left;
-      width: 60%; }
+      width: 60%;
+      /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+      /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+      @media (max-width: 62.5em) {
+        .title-chapterTitle--c2 {
+          width: 80%;
+          text-align: center; } }
+    .title-chapterTitle--c3 {
+      text-align: left;
+      /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+      /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+      @media (max-width: 62.5em) {
+        .title-chapterTitle--c3 {
+          width: 80%;
+          text-align: center; } }
     .title-chapterTitle--c4 {
       text-align: left;
-      width: 60%; }
+      width: 60%;
+      /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+      /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+      @media (max-width: 62.5em) {
+        .title-chapterTitle--c4 {
+          width: 80%;
+          text-align: center; } }
     .title-chapterTitle--c5 {
       text-align: left;
       width: 60%;
+      /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+      /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/
       /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1527,9 +1674,45 @@ h2 {
       @media (min-width: 100em) {
         .title-chapterTitle--c5 {
           width: 80%; } }
+      @media (max-width: 62.5em) {
+        .title-chapterTitle--c5 {
+          width: 80%;
+          text-align: center; } }
     .title-chapterTitle--c6 {
       width: 40%;
       text-align: left;
+      /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+      /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/
       /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1565,6 +1748,10 @@ h2 {
       @media (min-width: 100em) {
         .title-chapterTitle--c6 {
           width: 50%; } }
+      @media (max-width: 62.5em) {
+        .title-chapterTitle--c6 {
+          width: 80%;
+          text-align: center; } }
   .title-authorName {
     font-size: 1.8rem;
     margin-top: 3rem;
