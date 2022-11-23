@@ -1175,11 +1175,14 @@ h2 {
    *=============================================**/ }
     @media (max-width: 62.5em) {
       .title-landing {
+        position: relative;
+        margin: 0 auto;
         top: 1rem;
         left: 50%;
         align-items: center;
         width: 90%;
-        overflow: hidden; } }
+        overflow: hidden;
+        left: 0; } }
     .title-landing--prologue {
       bottom: 40%;
       left: 6rem;
@@ -1217,7 +1220,8 @@ h2 {
    *=============================================**/ }
       @media (max-width: 62.5em) {
         .title-landing--prologue {
-          bottom: 3rem; } }
+          bottom: 0rem;
+          left: 0rem; } }
     .title-landing--c1 {
       bottom: 40%;
       left: 3rem;
@@ -1255,7 +1259,8 @@ h2 {
    *=============================================**/ }
       @media (max-width: 62.5em) {
         .title-landing--c1 {
-          bottom: 3rem; } }
+          bottom: 0rem;
+          left: 0rem; } }
     .title-landing--c2 {
       bottom: 40%;
       left: 3rem;
@@ -1293,7 +1298,8 @@ h2 {
    *=============================================**/ }
       @media (max-width: 62.5em) {
         .title-landing--c2 {
-          bottom: 3rem; } }
+          bottom: 0rem;
+          left: 0rem; } }
     .title-landing--c3 {
       bottom: 40%;
       left: 3rem;
@@ -1331,7 +1337,8 @@ h2 {
    *=============================================**/ }
       @media (max-width: 62.5em) {
         .title-landing--c3 {
-          bottom: 3rem; } }
+          bottom: 0rem;
+          left: 0rem; } }
     .title-landing--c4 {
       bottom: 40%;
       left: 3rem;
@@ -1369,7 +1376,8 @@ h2 {
    *=============================================**/ }
       @media (max-width: 62.5em) {
         .title-landing--c4 {
-          bottom: 3rem; } }
+          bottom: 0rem;
+          left: 0rem; } }
     .title-landing--c5 {
       bottom: 40%;
       left: 3rem;
@@ -1407,7 +1415,8 @@ h2 {
    *=============================================**/ }
       @media (max-width: 62.5em) {
         .title-landing--c5 {
-          bottom: 3rem; } }
+          bottom: 0rem;
+          left: 0rem; } }
     .title-landing--c6 {
       bottom: 40%;
       left: 3rem;
@@ -1445,7 +1454,8 @@ h2 {
    *=============================================**/ }
       @media (max-width: 62.5em) {
         .title-landing--c6 {
-          bottom: 3rem; } }
+          bottom: 0rem;
+          left: 0rem; } }
     .title-landing > *:not(:first-child) {
       margin-top: 1rem;
       /**============================================

@@ -277,60 +277,70 @@ h2 {
     color: $color-white;
     width: 90%;
     @include respond(break-1000) {
+      position: relative;
+      margin: 0 auto;
       top: 1rem;
       left: 50%;
       // transform: translateX(-50%);
       align-items: center;
       width: 90%;
       overflow: hidden;
+      left: 0;
     }
     &--prologue {
       bottom: 40%;
       left: 6rem;
       @include respond(break-1000) {
-        bottom: 3rem;
+        bottom: 0rem;
+        left: 0rem;
       }
     }
     &--c1 {
       bottom: 40%;
       left: 3rem;
       @include respond(break-1000) {
-        bottom: 3rem;
+        bottom: 0rem;
+        left: 0rem;
       }
     }
     &--c2 {
       bottom: 40%;
       left: 3rem;
       @include respond(break-1000) {
-        bottom: 3rem;
+        bottom: 0rem;
+        left: 0rem;
       }
     }
     &--c3 {
       bottom: 40%;
       left: 3rem;
       @include respond(break-1000) {
-        bottom: 3rem;
+        bottom: 0rem;
+        left: 0rem;
       }
     }
     &--c4 {
       bottom: 40%;
       left: 3rem;
       @include respond(break-1000) {
-        bottom: 3rem;
+        bottom: 0rem;
+        left: 0rem;
       }
     }
     &--c5 {
       bottom: 40%;
       left: 3rem;
       @include respond(break-1000) {
-        bottom: 3rem;
+        bottom: 0rem;
+        left: 0rem;
       }
     }
     &--c6 {
       bottom: 40%;
       left: 3rem;
       @include respond(break-1000) {
-        bottom: 3rem;
+        bottom: 0rem;
+        left: 0rem;
       }
     }
     & > *:not(:first-child) {
