@@ -5,7 +5,7 @@
 h1 {
   font-size: 5rem;
   @include respond(break-1000) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -351,6 +351,10 @@ h2 {
     &--prologue {
     }
     &--c1 {
+      @include respond(break-1000) {
+        width: 100%;
+        text-align: center;
+      }
     }
     &--c2 {
       text-align: left;
