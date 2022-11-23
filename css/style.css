@@ -584,7 +584,7 @@ h2 {
   height: 100vh;
   width: 100%; }
   .chapter-landing--prologue {
-    background-image: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 25% 75%, black 80%), url("../img/prologue.jpg");
+    background-image: linear-gradient(to right, black 25%, rgba(0, 0, 0, 0) 30% 80%, black 85%), url("../img/prologue.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1173,7 +1173,7 @@ h2 {
         align-items: center;
         justify-content: space-between;
         height: 90%;
-        width: 85%;
+        width: 100%;
         overflow: hidden; } }
     .title-landing--prologue {
       bottom: 40%;
@@ -1478,7 +1478,7 @@ h2 {
       @media (max-width: 62.5em) {
         .title-landing > *:not(:first-child) {
           margin-top: 0;
-          margin-left: 1rem; } }
+          margin-left: 0rem; } }
   .title-content {
     color: #333333; }
   .title-chapterTitle {
@@ -1567,7 +1567,42 @@ h2 {
           width: 50%; } }
   .title-authorName {
     font-size: 1.8rem;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+    @media (max-width: 62.5em) {
+      .title-authorName {
+        margin-top: 0rem; } }
   .title-btn {
     font-size: 1.5rem;
     padding: 1rem 0.5rem;
@@ -1613,9 +1648,6 @@ h2 {
    *=============================================**/ }
     .title-btn:hover {
       background-color: #494949; }
-    @media (max-width: 62.5em) {
-      .title-btn {
-        margin-left: 1rem; } }
 
 .text {
   line-height: 2.9rem;
@@ -1678,9 +1710,8 @@ h2 {
    *=============================================**/ }
   @media (max-width: 62.5em) {
     .prologue-mobile {
-      display: flex; }
-      .prologue-mobile > h1:not(:first-child) {
-        margin-left: 1rem; } }
+      display: flex;
+      flex-direction: column; } }
 
 .prologue-mobile2 {
   display: flex;
