@@ -498,7 +498,7 @@ h1 {
    *=============================================**/ }
   @media (max-width: 62.5em) {
     h1 {
-      font-size: 2rem; } }
+      font-size: 4rem; } }
 
 h2 {
   font-size: 7rem;
@@ -584,7 +584,7 @@ h2 {
   height: 100vh;
   width: 100%; }
   .chapter-landing--prologue {
-    background-image: linear-gradient(to right, black 15%, rgba(0, 0, 0, 0) 25% 75%, black 85%), url("../img/prologue.jpg");
+    background-image: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 25% 75%, black 80%), url("../img/prologue.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -622,9 +622,9 @@ h2 {
    *=============================================**/ }
     @media (max-width: 62.5em) {
       .chapter-landing--prologue {
-        background-size: cover;
+        background-size: contain;
         background-position: 60% 45%;
-        background-image: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0) 25% 55%), url("../img/prologue.jpg"); } }
+        background-image: linear-gradient(to top, black 25%, rgba(0, 0, 0, 0) 30% 75%, black 80%), url("../img/prologue.jpg"); } }
   .chapter-landing--c1 {
     background-image: linear-gradient(to right, black 0 35%, rgba(0, 0, 0, 0) 40% 55%, black 85%), url("../img/chapter1.jpg");
     background-repeat: no-repeat;
@@ -1170,8 +1170,9 @@ h2 {
    *=============================================**/ }
     @media (max-width: 62.5em) {
       .title-landing {
-        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        height: 90%;
         width: 85%;
         overflow: hidden; } }
     .title-landing--prologue {
@@ -1612,6 +1613,9 @@ h2 {
    *=============================================**/ }
     .title-btn:hover {
       background-color: #494949; }
+    @media (max-width: 62.5em) {
+      .title-btn {
+        margin-left: 1rem; } }
 
 .text {
   line-height: 2.9rem;
@@ -1638,3 +1642,85 @@ h2 {
 
 #scrollAdhoc {
   padding: 4rem 0; }
+
+.prologue-mobile {
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (max-width: 62.5em) {
+    .prologue-mobile {
+      display: flex; }
+      .prologue-mobile > h1:not(:first-child) {
+        margin-left: 1rem; } }
+
+.prologue-mobile2 {
+  display: flex;
+  flex-direction: column;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (max-width: 62.5em) {
+    .prologue-mobile2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .prologue-mobile2 button {
+        margin-top: 1rem; } }
