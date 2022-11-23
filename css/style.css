@@ -1171,11 +1171,8 @@ h2 {
    *=============================================**/ }
     @media (max-width: 62.5em) {
       .title-landing {
-        top: 50%;
-        transform: translateY(-50%);
+        top: 1rem;
         align-items: center;
-        justify-content: space-between;
-        height: 75%;
         width: 80%;
         overflow: hidden; } }
     .title-landing--prologue {
