@@ -63,8 +63,8 @@
    @include respond(break-greater-1400) {}
    *=============================================**/
 
-  @if $breakpoint == break-greater-1400 {
-    @media (min-width: 87.5em) {
+  @if $breakpoint == break-greater-1600 {
+    @media (min-width: 100em) {
       @content;
     } //1400px
   }

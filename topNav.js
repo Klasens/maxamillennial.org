@@ -47,10 +47,18 @@ const poetry = document.querySelector('#poetry');
 //FUNCTIONS
 
 const showSideMenu = function () {
+  sideMenu.classList.toggle('pointerEvents-none');
   sideMenu.classList.toggle('show');
   hamSlide1.classList.toggle('hamSlide1');
   hamSlide2.classList.toggle('hamSlide2');
   hamHide.classList.toggle('hamHide');
+};
+
+const fullMenuReset = function () {
+  if (sideMenu.classList.contains('show')) {
+    ddArrowReset();
+    listReset();
+  }
 };
 
 const ddArrowReset = function () {
@@ -149,12 +157,13 @@ const showPoetryList = function () {
   ddArrowPoetry.classList.toggle('rotateZ-90');
 };
 //EVENT LISTNERS
+hamMenu.addEventListener('click', fullMenuReset);
 hamMenu.addEventListener('click', showSideMenu);
 
-ddArrowNonfiction_long.addEventListener('click', showNonfictionList_long);
-ddArrowNonfiction_short.addEventListener('click', showNonfictionList_short);
-ddArrowShortStories.addEventListener('click', showShortStoriesList);
-ddArrowAphorisms.addEventListener('click', showAphorismsList);
-ddArrowArticles.addEventListener('click', showArticlesList);
-ddArrowPoetry.addEventListener('click', showPoetryList);
-ddArrowChapters.addEventListener('click', showChaptersList);
+nonfiction_long.addEventListener('click', showNonfictionList_long);
+nonfiction_short.addEventListener('click', showNonfictionList_short);
+shortStories.addEventListener('click', showShortStoriesList);
+aphorisms.addEventListener('click', showAphorismsList);
+articles.addEventListener('click', showArticlesList);
+poetry.addEventListener('click', showPoetryList);
+chapters.addEventListener('click', showChaptersList);

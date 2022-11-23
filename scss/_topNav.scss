@@ -70,6 +70,11 @@
     & > div:not(:first-child) {
       margin-top: 2rem;
     }
+    @include respond(break-850) {
+      > div:not(:nth-of-type(2)) {
+        display: none;
+      }
+    }
   }
 
   &-ddMenu--header {
@@ -105,9 +110,14 @@
     width: 100%;
     background-color: $color-nav-gray;
     transform: translateY(0);
-    transition: transform 0.3s;
-    transition-delay: 0.3s;
+    transition: all 0.3s;
+    transition-delay: transform 0.3s;
+    cursor: pointer;
     @include center_flex_column;
+
+    &:hover {
+      background-color: $color-green;
+    }
   }
 
   //Dropdown Arrow Container
@@ -325,8 +335,16 @@
   transform: translateX(-50%);
 }
 .list-header {
+  text-transform: none;
   font-size: 1.8rem;
   text-decoration: underline;
   font-weight: 300;
   text-align: center;
+}
+#list-chapters {
+  @include respond(break-850) {
+    opacity: 1;
+    width: 100%;
+    transform: translate(0, 0);
+  }
 }
