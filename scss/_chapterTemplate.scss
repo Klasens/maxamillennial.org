@@ -46,9 +46,9 @@ h2 {
         background-position: 60% 45%;
         background-image: linear-gradient(
             to top,
-            rgba(0, 0, 0, 1) 25%,
-            rgba(0, 0, 0, 0) 30% 75%,
-            rgba(0, 0, 0, 1) 80%
+            rgba(0, 0, 0, 1) 30%,
+            rgba(0, 0, 0, 0) 35% 70%,
+            rgba(0, 0, 0, 1) 75%
           ),
           url('../img/prologue.jpg');
       }
@@ -266,6 +266,7 @@ h2 {
   &-landing {
     position: absolute;
     color: $color-white;
+    width: 90%;
     @include respond(break-1000) {
       align-items: center;
       justify-content: space-between;
