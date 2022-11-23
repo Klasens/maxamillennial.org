@@ -624,7 +624,7 @@ h2 {
       .chapter-landing--prologue {
         background-size: contain;
         background-position: 60% 45%;
-        background-image: linear-gradient(to top, black 30%, rgba(0, 0, 0, 0) 35% 70%, black 75%), url("../img/prologue.jpg"); } }
+        background-image: linear-gradient(to top, black 30%, rgba(0, 0, 0, 0) 40% 65%, black 75%), url("../img/prologue.jpg"); } }
   .chapter-landing--c1 {
     background-image: linear-gradient(to right, black 0 35%, rgba(0, 0, 0, 0) 40% 55%, black 85%), url("../img/chapter1.jpg");
     background-repeat: no-repeat;
@@ -1171,9 +1171,11 @@ h2 {
    *=============================================**/ }
     @media (max-width: 62.5em) {
       .title-landing {
+        top: 50%;
+        transform: translateY(-50%);
         align-items: center;
         justify-content: space-between;
-        height: 90%;
+        height: 75%;
         width: 80%;
         overflow: hidden; } }
     .title-landing--prologue {

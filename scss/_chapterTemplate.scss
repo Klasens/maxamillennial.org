@@ -47,7 +47,7 @@ h2 {
         background-image: linear-gradient(
             to top,
             rgba(0, 0, 0, 1) 30%,
-            rgba(0, 0, 0, 0) 35% 70%,
+            rgba(0, 0, 0, 0) 40% 65%,
             rgba(0, 0, 0, 1) 75%
           ),
           url('../img/prologue.jpg');
@@ -268,9 +268,11 @@ h2 {
     color: $color-white;
     width: 90%;
     @include respond(break-1000) {
+      top: 50%;
+      transform: translateY(-50%);
       align-items: center;
       justify-content: space-between;
-      height: 90%;
+      height: 75%;
       width: 80%;
       overflow: hidden;
     }
