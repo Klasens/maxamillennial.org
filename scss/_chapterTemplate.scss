@@ -357,7 +357,7 @@ h2 {
   &-chapterNumber {
   }
   &-chapterTitle {
-    text-align: center;
+    text-align: left;
     &--prologue {
     }
     &--c1 {
@@ -491,4 +491,8 @@ h2 {
       margin-top: 1rem;
     }
   }
+}
+
+.text-align-center {
+  text-align: center;
 }

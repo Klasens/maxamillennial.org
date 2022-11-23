@@ -1497,7 +1497,7 @@ h2 {
   .title-content {
     color: #333333; }
   .title-chapterTitle {
-    text-align: center; }
+    text-align: left; }
     .title-chapterTitle--c1 {
       /**============================================
    *             Mobile Small - 600
@@ -1989,3 +1989,6 @@ h2 {
       align-items: center; }
       .prologue-mobile2 button {
         margin-top: 1rem; } }
+
+.text-align-center {
+  text-align: center; }
