@@ -1082,6 +1082,7 @@ h2 {
 
 .chapter-content {
   margin: 0rem auto;
+  padding-bottom: 4rem;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -1495,7 +1496,42 @@ h2 {
           margin-top: 3px;
           margin-left: 0rem; } }
   .title-content {
-    color: #333333; }
+    color: #333333;
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+    @media (max-width: 62.5em) {
+      .title-content > h2 {
+        margin-bottom: 2rem; } }
   .title-chapterTitle {
     text-align: left; }
     .title-chapterTitle--c1 {
@@ -1992,3 +2028,9 @@ h2 {
 
 .text-align-center {
   text-align: center; }
+
+.title-landing > h1 {
+  width: 30%; }
+
+.title-chapterTitle--c1 {
+  width: 100% !important; }

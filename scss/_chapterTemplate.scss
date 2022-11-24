@@ -241,6 +241,7 @@ h2 {
 
   &-content {
     margin: 0rem auto;
+    padding-bottom: 4rem;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -353,11 +354,18 @@ h2 {
   }
   &-content {
     color: $color-black;
+
+    @include respond(break-1000) {
+      > h2 {
+        margin-bottom: 2rem;
+      }
+    }
   }
   &-chapterNumber {
   }
   &-chapterTitle {
     text-align: left;
+
     &--prologue {
     }
     &--c1 {
@@ -495,4 +503,15 @@ h2 {
 
 .text-align-center {
   text-align: center;
+}
+
+.title-landing {
+  & > h1 {
+    width: 30%;
+  }
+}
+
+//! AD HOC IMPORTANT SELECTOR
+.title-chapterTitle--c1 {
+  width: 100% !important;
 }
