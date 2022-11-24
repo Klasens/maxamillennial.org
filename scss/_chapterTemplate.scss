@@ -442,8 +442,6 @@ h2 {
     &:hover {
       background-color: $color-dark-gray;
     }
-    @include respond(break-1000) {
-    }
   }
 }
 
@@ -508,6 +506,9 @@ h2 {
 .title-landing {
   & > h1 {
     width: 30%;
+    @include respond(break-1000) {
+      width: max-content;
+    }
   }
 }
 
