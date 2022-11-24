@@ -1906,7 +1906,7 @@ h2 {
         .title-chapterTitle--c6 {
           width: 80%;
           text-align: center;
-          font-size: 1.5rem; } }
+          font-size: 1.7rem; } }
   .title-authorName {
     font-size: 1.8rem;
     margin-top: 3rem;
@@ -1944,7 +1944,8 @@ h2 {
    *=============================================**/ }
     @media (max-width: 62.5em) {
       .title-authorName {
-        margin-top: 0rem; } }
+        margin-top: 0rem;
+        font-size: 1.7rem; } }
   .title-btn {
     font-size: 1.5rem;
     padding: 1rem 0.5rem;
