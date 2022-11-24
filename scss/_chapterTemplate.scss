@@ -417,6 +417,7 @@ h2 {
       @include respond(break-1000) {
         width: 80%;
         text-align: center;
+        font-size: 1.5rem;
       }
     }
   }
