@@ -1,0 +1,21 @@
+<!-- Imports -->
+{% import 'macros/title-macro.html' as head %}
+
+<!-- Meta Blocks -->
+{% extends "layout.html" %}
+
+<!-- Block Title -->
+{% block title %} {{head.title('A Journal Entry from the Last Man on Earth')}}
+{% endblock %}
+
+<!-- Block Content -->
+{% block content %}
+
+<!-- Partial 1 NJK-->
+{% include "partials/topNav.html" %}
+
+<!-- Partial 2 NJK-->
+{% include "partials/c6.html" %}
+
+<!-- Endblock -->
+{% endblock %}

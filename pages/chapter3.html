@@ -1,0 +1,20 @@
+<!-- Imports -->
+{% import 'macros/title-macro.html' as head %}
+
+<!-- Meta Blocks -->
+{% extends "layout.html" %}
+
+<!-- Block Title -->
+{% block title %} {{head.title('Ego Death')}} {% endblock %}
+
+<!-- Block Content -->
+{% block content %}
+
+<!-- Partial 1 NJK-->
+{% include "partials/topNav.html" %}
+
+<!-- Partial 2 NJK-->
+{% include "partials/c3.html" %}
+
+<!-- Endblock -->
+{% endblock %}
