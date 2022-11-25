@@ -19,58 +19,9 @@
       <span class="title-authorName">By Maxa Millennial</span>
     </div>
     <div class="chapter-text">
-      <p class="text">
-        It wasn't until the later stages where the feelings actually became
-        characterizable. I still, somehow, recall that first feeling of a
-        blissful answer. It's something I can't stop reaching for.
-      </p>
-      <p class="text">
-        As the child lay there in his bed, he pondered the first question all
-        people ponder. He lay there clutching his mind and wondering about those
-        questions which he, for the first time, realized existed. What was then
-        only a feeling is now understood as the thing it is: a wrenching
-        paralysis, a pain borne of the mind.
-      </p>
-      <p class="text">
-        The child tried the standard fixes. The first, being nothing less than a
-        wholesome attempt, only covered the wound for about 24 hours. What's
-        still vexing to the adult he has become is his observation that some
-        people can discover that fearful question, apply the same simple
-        solution he did, and have it stick for the rest of their life. And such
-        a slavely application it was!
-      </p>
-      <p class="text">
-        I know there are some of you who, in this moment, are feeling that
-        anxious dread and would like me to at least outline this possible
-        solution. You might like to try it for any reprieve, for the relief of a
-        single day (perhaps, if you're especially anxious), an hour, or even
-        minute would be preferred to the emptiness you feel now — even if it's a
-        solution manufactured by the great peddlers and charlatans of history. I
-        can, with great anxiety myself, confirm that there is no solution. Those
-        questions you have will never be answered (not the way you'd like them
-        to be). But in any case, against my better judgement, I will devote a
-        single line to the solution which I found to be unsatisfying almost as
-        quickly as I considered it.
-      </p>
-      <p class="text">
-        "We couldn't have just appeared here, someone had to create us, or at
-        least start the universe."
-      </p>
-      <p class="text">
-        Oh, by the way, I got a coffee today and had the most interesting
-        conversation with a barista.
-      </p>
-      <p class="text">
-        "Yes I'd like a medium coffee please. Why, you ask? Because the death of
-        the universe is only moments away, the inevitable stripping of meaning
-        just one sip further, the undeniable triviality exactly one thought
-        closer."
-      </p>
-      <p class="text">
-        I continued to live, but the cycle would repeat: approach the new
-        mountain top, observe the great potential of the horizon, then descend
-        back down lower than ever before.
-      </p>
+      {% for chapterText in survivingTheFirstDeath %}
+      <p class="text">{{chapterText.paragraph}}</p>
+      {% endfor %}
     </div>
   </div>
 </section>

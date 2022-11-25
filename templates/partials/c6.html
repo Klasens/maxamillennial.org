@@ -19,35 +19,9 @@
       <span class="title-authorName">By Maxa Millennial</span>
     </div>
     <div class="chapter-text">
-      <p class="text">
-        I must say I'm quite surprised to come down from this high and find you
-        all gone. In the duration of the brief few years I've spent in the fog,
-        the populations that surrounded me have disappeared. Now that I stand
-        alone, it's as though I have nothing left to say or nobody left to say
-        it to. I suppose my final task will be to excavate downward, to dig
-        deeper, to catalog the destructions that have been brought upon our
-        world, destructions that have apparently struck you all.
-      </p>
-      <p class="text">
-        But I must confess, now that it's just me, there's a certain joy I plan
-        to take. A joy that comes with the knowledge of a humanity departed and
-        dead. A joy that stems outward from, well, to be coy, pure dread.
-      </p>
-      <p class="text">
-        Because with that joy, the evil that strangles our deepest mind can
-        harden our hearts into diamonds. Because with that joy, the evil that
-        decomposes the living can fertilize the flowers of beautiful doom.
-      </p>
-      <p class="text">
-        Because only when the death that surrounds us all is cultivated and
-        curated can the spotlight of proliferation be switched on and directed.
-      </p>
-      <p class="text">
-        But where do I shine the light? I think the only option that remains is
-        to point upward, like a beam shooting out from the center of our Earth,
-        and wait for the next set of beings to discover the pages of my final
-        days.
-      </p>
+      {% for chapterText in aJournalEntryFromTheLastManOnEarth %}
+      <p class="text">{{chapterText.paragraph}}</p>
+      {% endfor %}
     </div>
   </div>
 </section>

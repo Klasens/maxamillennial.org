@@ -1,6 +1,7 @@
 'use strict';
 const gulp = require('gulp');
 const nunjucksRender = require('gulp-nunjucks-render');
+const data = require('gulp-data');
 
 function defaultTask(cb) {
   // place code for your default task here
@@ -13,6 +14,11 @@ gulp.task('nunjucks', function () {
     gulp
       .src('pages/**/*.+(html|njk)')
       // Renders template with nunjucks
+      .pipe(
+        data(function () {
+          return require('./chapterText.json');
+        })
+      )
       .pipe(
         nunjucksRender({
           path: ['templates'],
