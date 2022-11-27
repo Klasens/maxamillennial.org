@@ -9,10 +9,16 @@
 @import 'animations';
 @import 'base';
 
-//TOPNAV
-@import 'topNav';
+//NAV
+@import 'nav';
+@import 'topNav2';
+@import 'sideNav';
+@import 'subNav';
 
 // PAGES
 @import 'creativeNonfiction';
 @import 'chapterTemplate';
 @import 'toc';
+
+//JS Transitions
+@import 'javascript';

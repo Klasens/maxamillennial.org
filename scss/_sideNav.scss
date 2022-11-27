@@ -1,0 +1,101 @@
+/**========================================================================
+ *                          SIDE NAV 
+ *========================================================================**/
+
+.sideNav {
+  z-index: 100;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 30rem;
+  height: 90vh;
+  border-top: 2px solid $color-gray;
+  border-right: 2px solid $color-black;
+  border-left: 2px solid $color-black;
+  background-color: $color-black;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  @include respond(break-850) {
+    width: 100%;
+  }
+
+  &-header {
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  &-allLinks {
+    margin: 5rem 0;
+
+    & > div:not(:first-child) {
+      margin-top: 2rem;
+    }
+    @include respond(break-850) {
+      > div:not(:nth-of-type(2)) {
+        display: none;
+      }
+    }
+  }
+
+  &-link {
+    position: relative;
+    height: 4.5rem;
+    width: 100%;
+    background-color: $color-nav-gray;
+    transform: translateY(0);
+    transition: all 0.3s;
+    transition-delay: transform 0.3s;
+    cursor: pointer;
+    @include center_flex_column;
+
+    &:hover {
+      background-color: $color-green;
+    }
+    &--text {
+      font-size: 2rem;
+      color: $color-white;
+    }
+  }
+
+  &-arrow {
+    font-size: 1.5rem;
+    color: $color-white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform: rotateZ(-90deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2rem;
+    width: 2rem;
+    margin: 3px;
+  }
+  &-btn {
+    &--contact {
+      background-color: $color-nav-gray;
+      color: $color-white;
+      font-size: 2rem;
+      font-weight: 300;
+      width: 100%;
+      border: none;
+      padding: 1rem;
+      transition: background-color 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-red;
+      }
+    }
+  }
+
+  &-logo {
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 4rem auto 0;
+    text-align: center;
+  }
+}

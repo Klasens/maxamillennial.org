@@ -6,7 +6,7 @@
 const allListContainers = document.querySelectorAll(
   '.topNav-ddMenu--linkContainer'
 );
-const allArrowContainers = document.querySelectorAll('.topNav-ddMenu--ddArrow');
+const allArrowContainers = document.querySelectorAll('.sideNav-arrow');
 //----- MENUS
 const hamMenu = document.querySelector('#hamMenu');
 const sideMenu = document.querySelector('#sideMenu');

@@ -237,6 +237,7 @@
 .topNav-ddMenu {
   &--link {
     font-size: 2rem;
+    color: $color-white;
   }
   &--logoutBtn {
     font-size: 2rem;
@@ -320,9 +321,6 @@
   transform: rotateX(180deg);
 }
 
-.rotateZ-90 {
-  transform: rotateZ(90deg);
-}
 .height-125vh {
   height: 125vh;
 }
