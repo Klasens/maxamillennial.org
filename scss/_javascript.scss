@@ -17,3 +17,26 @@
 .z-index-10 {
   z-index: 10;
 }
+
+.pointerEvents-none {
+  pointer-events: none;
+
+  & > * {
+    pointer-events: none;
+  }
+}
+
+.hamHide {
+  opacity: 0;
+}
+
+.hamSlide1 {
+  transform: rotate(45deg) translateY(16px);
+}
+.hamSlide2 {
+  transform: rotate(-45deg) translateY(-17px);
+}
+
+#scrollAdhoc {
+  padding: 4rem 0;
+}

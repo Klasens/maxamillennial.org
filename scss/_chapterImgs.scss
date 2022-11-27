@@ -1,0 +1,330 @@
+//! AD HOC IMPORTANT SELECTOR
+.title-chapterTitle--c1 {
+  width: 100% !important;
+}
+
+.chapter-landing {
+  &--prologue {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 25%,
+        rgba(0, 0, 0, 0) 30% 80%,
+        rgba(0, 0, 0, 1) 85%
+      ),
+      url('../img/prologue.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include respond(break-1000) {
+      background-size: contain;
+      background-position: 60% 45%;
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 30%,
+          rgba(0, 0, 0, 0) 40% 65%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/prologue.jpg');
+    }
+  }
+  &--c1 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 0 35%,
+        rgba(0, 0, 0, 0) 40% 55%,
+        rgba(0, 0, 0, 1) 85%
+      ),
+      url('../img/chapter1.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    @include respond(break-greater-1600) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 25%,
+          rgba(0, 0, 0, 0) 25% 75%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/chapter1.jpg');
+    }
+    @include respond(break-1000) {
+      background-size: contain;
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 30%,
+          rgba(0, 0, 0, 0) 40% 65%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/chapter1.jpg');
+    }
+  }
+  &--c2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 0 25%,
+        rgba(0, 0, 0, 0) 30% 90%,
+        rgba(0, 0, 0, 1) 95%
+      ),
+      url('../img/chapter2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    @include respond(break-greater-1600) {
+      background-position: 0% 45%;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 0) 25% 55%,
+          rgba(0, 0, 0, 1) 78%
+        ),
+        url('../img/chapter2.jpg');
+    }
+    @include respond(break-1000) {
+      background-position: 80% 45%;
+      background-size: contain;
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 30%,
+          rgba(0, 0, 0, 0) 40% 65%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/chapter2.jpg');
+    }
+  }
+  &--c3 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 0 25%,
+        rgba(0, 0, 0, 0) 30% 90%,
+        rgba(0, 0, 0, 1) 95%
+      ),
+      url('../img/chapter3.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    @include respond(break-greater-1600) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 25%,
+          rgba(0, 0, 0, 0) 30% 80%,
+          rgba(0, 0, 0, 1) 85%
+        ),
+        url('../img/chapter3.jpg');
+    }
+    @include respond(break-1000) {
+      background-size: contain;
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 30%,
+          rgba(0, 0, 0, 0) 40% 65%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/chapter3.jpg');
+    }
+  }
+  &--c4 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 0 20%,
+        rgba(0, 0, 0, 0) 25% 55%,
+        rgba(0, 0, 0, 1) 85%
+      ),
+      url('../img/chapter4.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    @include respond(break-greater-1600) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 35%,
+          rgba(0, 0, 0, 0) 45% 65%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/chapter4.jpg');
+    }
+    @include respond(break-1000) {
+      background-size: contain;
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 30%,
+          rgba(0, 0, 0, 0) 40% 65%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/chapter4.jpg');
+    }
+  }
+  &--c5 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 0 20%,
+        rgba(0, 0, 0, 0) 25% 55%,
+        rgba(0, 0, 0, 1) 85%
+      ),
+      url('../img/chapter5.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    @include respond(break-greater-1600) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 25%,
+          rgba(0, 0, 0, 0) 30% 70%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/chapter5.jpg');
+    }
+    @include respond(break-1000) {
+      background-size: contain;
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 30%,
+          rgba(0, 0, 0, 0) 40% 65%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/chapter5.jpg');
+    }
+  }
+  &--c6 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 0 25%,
+        rgba(0, 0, 0, 0) 30% 90%,
+        rgba(0, 0, 0, 1) 95%
+      ),
+      url('../img/chapter3-2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    @include respond(break-greater-1600) {
+      background-position: 0% 45%;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 0) 25% 65%,
+          rgba(0, 0, 0, 1) 78%
+        ),
+        url('../img/chapter3-2.jpg');
+    }
+    @include respond(break-1000) {
+      background-size: contain;
+      background-position: 75% 45%;
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 35%,
+          rgba(0, 0, 0, 0) 40% 70%,
+          rgba(0, 0, 0, 1) 75%
+        ),
+        url('../img/chapter3-2.jpg');
+    }
+  }
+}
+
+.title-landing {
+  &--prologue {
+    bottom: 40%;
+    left: 3rem;
+    @include respond(break-1000) {
+      bottom: 0rem;
+      left: 0rem;
+    }
+  }
+  &--c1 {
+    bottom: 40%;
+    left: 3rem;
+    @include respond(break-1000) {
+      bottom: 0rem;
+      left: 0rem;
+    }
+  }
+  &--c2 {
+    bottom: 40%;
+    left: 3rem;
+    @include respond(break-1000) {
+      bottom: 0rem;
+      left: 0rem;
+    }
+  }
+  &--c3 {
+    bottom: 40%;
+    left: 3rem;
+    @include respond(break-1000) {
+      bottom: 0rem;
+      left: 0rem;
+    }
+  }
+  &--c4 {
+    bottom: 40%;
+    left: 3rem;
+    @include respond(break-1000) {
+      bottom: 0rem;
+      left: 0rem;
+    }
+  }
+  &--c5 {
+    bottom: 40%;
+    left: 3rem;
+    @include respond(break-1000) {
+      bottom: 0rem;
+      left: 0rem;
+    }
+  }
+  &--c6 {
+    bottom: 40%;
+    left: 3rem;
+    @include respond(break-1000) {
+      bottom: 0rem;
+      left: 0rem;
+    }
+  }
+}
+
+.title-chapterTitle {
+  &--prologue {
+  }
+  &--c1 {
+    @include respond(break-1000) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &--c2 {
+    text-align: left;
+    width: 60%;
+    @include respond(break-1000) {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  &--c3 {
+    text-align: left;
+    @include respond(break-1000) {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  &--c4 {
+    text-align: left;
+    width: 60%;
+    @include respond(break-1000) {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  &--c5 {
+    text-align: left;
+    width: 60%;
+    @include respond(break-greater-1600) {
+      width: 80%;
+    }
+    @include respond(break-1000) {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  &--c6 {
+    width: 40%;
+    text-align: left;
+    @include respond(break-greater-1600) {
+      width: 50%;
+    }
+    @include respond(break-1000) {
+      width: 80%;
+      text-align: center;
+      font-size: 1.7rem;
+    }
+  }
+}

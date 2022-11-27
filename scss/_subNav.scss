@@ -2,9 +2,15 @@
  *                          SUB NAV 
  *========================================================================**/
 
+#list-chapters {
+  @include respond(break-850) {
+    opacity: 1;
+    width: 100%;
+    transform: translate(0, 0);
+  }
+}
 .subNav {
   position: absolute;
-  width: 90%;
   opacity: 0;
   transition: opacity 0.3s;
   transition-delay: 0.3s;
@@ -21,6 +27,7 @@
     margin-top: 1rem;
   }
   &-header {
+    color: $color-white;
     text-transform: none;
     font-size: 1.8rem;
     text-decoration: underline;
