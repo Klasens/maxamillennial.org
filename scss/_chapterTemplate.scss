@@ -40,6 +40,12 @@
 .title {
   display: flex;
   flex-direction: column;
+
+  &-chapterNumber {
+    @include respond(break-1000) {
+      text-align: center;
+    }
+  }
 }
 
 .title-landing {
@@ -70,7 +76,7 @@
     font-size: 5rem;
     @include respond(break-1000) {
       font-size: 3rem;
-      width: max-content;
+      width: 80%;
     }
   }
   & > span {

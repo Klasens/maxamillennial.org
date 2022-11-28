@@ -475,6 +475,42 @@ a {
 .title {
   display: flex;
   flex-direction: column; }
+  .title-chapterNumber {
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Larger than - 1400
+   @include respond(break-greater-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+    @media (max-width: 62.5em) {
+      .title-chapterNumber {
+        text-align: center; } }
 
 .title-landing {
   position: absolute;
@@ -598,7 +634,7 @@ a {
     @media (max-width: 62.5em) {
       .title-landing > h1 {
         font-size: 3rem;
-        width: max-content; } }
+        width: 80%; } }
   .title-landing > span {
     color: white; }
 
