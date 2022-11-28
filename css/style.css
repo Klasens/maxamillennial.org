@@ -634,7 +634,7 @@ a {
     @media (max-width: 62.5em) {
       .title-landing > h1 {
         font-size: 3rem;
-        width: 80%; } }
+        width: 90%; } }
   .title-landing > span {
     color: white; }
 
@@ -1559,6 +1559,9 @@ a {
     .title-landing--c6 {
       bottom: 0rem;
       left: 0rem; } }
+
+.title-chapterTitle--prologue {
+  text-align: center; }
 
 .title-chapterTitle--c1 {
   /**============================================
