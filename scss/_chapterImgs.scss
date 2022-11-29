@@ -274,7 +274,9 @@
 
 .title-chapterTitle {
   &--prologue {
-    text-align: center;
+    @include respond(break-1000) {
+      text-align: center;
+    }
   }
   &--c1 {
     @include respond(break-1000) {
