@@ -1,13 +1,17 @@
 'use strict';
+// CLICKABLE LINKS
+const tocChaptersLink = document.querySelector('#toc-chaptersLink');
+const tocFictionLink = document.querySelector('#toc-fictionLink');
+const tocLFLink = document.querySelector('#toc-LF-NonfictionLink');
+const tocSFLink = document.querySelector('#toc-SF-NonfictionLink');
+const tocAphorismsLink = document.querySelector('#toc-aphorisms');
+const tocPoetryLink = document.querySelector('#toc-poetry');
 
-const tocChapters = document.querySelector('#toc-chapters');
+// DISPLAYS
 const tocChaptersDisplay = document.querySelector('#toc-chaptersDisplay');
-const tocFiction = document.querySelector('#toc-fiction');
 const tocFictionDisplay = document.querySelector('#toc-fictionDisplay');
-const tocLF = document.querySelector('#toc-LF');
-const tocSF = document.querySelector('#toc-SF');
-const tocAphorisms = document.querySelector('#toc-aphorisms');
-const tocPoetry = document.querySelector('#toc-poetry');
+
+// CHAPTER SELECTORS
 const c0 = document.querySelector('#c0');
 const c1 = document.querySelector('#c1');
 const c2 = document.querySelector('#c2');
@@ -21,46 +25,31 @@ const c2Line = document.querySelector('#c2-line');
 const c3Line = document.querySelector('#c3-line');
 const c4Line = document.querySelector('#c4-line');
 const c5Line = document.querySelector('#c5-line');
+
+// FICTION SELECTORS
 const f1 = document.querySelector('#f1');
 const f2 = document.querySelector('#f2');
 const f3 = document.querySelector('#f3');
 const f4 = document.querySelector('#f4');
 const f5 = document.querySelector('#f5');
 
+// SHOW FUNCTIONS
 const showChapters = function () {
   tocChaptersDisplay.classList.add('opacity-1');
   tocChaptersDisplay.classList.add('z-index-10');
-  c0.classList.add('unfold-0');
-  c1.classList.add('unfold-1');
-  c2.classList.add('unfold-2');
-  c3.classList.add('unfold-3');
-  c4.classList.add('unfold-4');
-  c5.classList.add('unfold-5');
-  c6.classList.add('unfold-6');
-  c0Line.classList.add('fade-0');
-  c1Line.classList.add('fade-1');
-  c2Line.classList.add('fade-2');
-  c3Line.classList.add('fade-3');
-  c4Line.classList.add('fade-4');
-  c5Line.classList.add('fade-5');
-};
-
-const hideChapters = function () {
-  tocChaptersDisplay.classList.remove('opacity-1');
-  tocChaptersDisplay.classList.remove('z-index-10');
-  c0.classList.remove('unfold-0');
-  c1.classList.remove('unfold-1');
-  c2.classList.remove('unfold-2');
-  c3.classList.remove('unfold-3');
-  c4.classList.remove('unfold-4');
-  c5.classList.remove('unfold-5');
-  c6.classList.remove('unfold-6');
-  c0Line.classList.remove('fade-0');
-  c1Line.classList.remove('fade-1');
-  c2Line.classList.remove('fade-2');
-  c3Line.classList.remove('fade-3');
-  c4Line.classList.remove('fade-4');
-  c5Line.classList.remove('fade-5');
+  c0.classList.add('unfold-c0');
+  c1.classList.add('unfold-c1');
+  c2.classList.add('unfold-c2');
+  c3.classList.add('unfold-c3');
+  c4.classList.add('unfold-c4');
+  c5.classList.add('unfold-c5');
+  c6.classList.add('unfold-c6');
+  c0Line.classList.add('fadeIn-c0');
+  c1Line.classList.add('fadeIn-c1');
+  c2Line.classList.add('fadeIn-c2');
+  c3Line.classList.add('fadeIn-c3');
+  c4Line.classList.add('fadeIn-c4');
+  c5Line.classList.add('fadeIn-c5');
 };
 
 const showFiction = function () {
@@ -71,6 +60,24 @@ const showFiction = function () {
   f4.classList.add('fade-f4');
   f5.classList.add('fade-f5');
 };
+// HIDE FUNCTIONS
+const hideChapters = function () {
+  tocChaptersDisplay.classList.remove('opacity-1');
+  tocChaptersDisplay.classList.remove('z-index-10');
+  c0.classList.remove('unfold-c0');
+  c1.classList.remove('unfold-c1');
+  c2.classList.remove('unfold-c2');
+  c3.classList.remove('unfold-c3');
+  c4.classList.remove('unfold-c4');
+  c5.classList.remove('unfold-c5');
+  c6.classList.remove('unfold-c6');
+  c0Line.classList.remove('fadeIn-c0');
+  c1Line.classList.remove('fadeIn-c1');
+  c2Line.classList.remove('fadeIn-c2');
+  c3Line.classList.remove('fadeIn-c3');
+  c4Line.classList.remove('fadeIn-c4');
+  c5Line.classList.remove('fadeIn-c5');
+};
 
 const hideFiction = function () {
   f1.classList.remove('fade-f1');
@@ -80,12 +87,13 @@ const hideFiction = function () {
   f5.classList.remove('fade-f5');
 };
 
-tocChapters.addEventListener('click', function () {
+// EVENT LISTENERS
+tocChaptersLink.addEventListener('click', function () {
   showChapters();
   hideFiction();
 });
 
-tocFiction.addEventListener('click', function () {
+tocFictionLink.addEventListener('click', function () {
   hideChapters();
   showFiction();
 });

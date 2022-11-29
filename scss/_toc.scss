@@ -3,7 +3,6 @@
  *========================================================================**/
 
 .toc {
-  height: 90vh;
   width: 100%;
   display: flex;
   background-image: linear-gradient(
@@ -32,6 +31,7 @@
 
     &--chapters {
       display: flex;
+      height: 80%;
       flex-direction: column;
       opacity: 0;
       transition: opacity 1s;
@@ -106,140 +106,4 @@
       animation: chapterLine 2s infinite linear;
     }
   }
-}
-
-.fade-f1 {
-  top: 25%;
-  left: 25%;
-  animation: f1 1s 1 forwards;
-}
-.fade-f2 {
-  top: 25%;
-  left: 75%;
-  animation: f2 1s 1 forwards;
-}
-.fade-f3 {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: fadeIn 1s 1 forwards;
-}
-.fade-f4 {
-  top: 75%;
-  left: 25%;
-  animation: f4 1s 1 forwards;
-}
-.fade-f5 {
-  top: 75%;
-  left: 75%;
-  animation: f5 1s 1 forwards;
-}
-
-//ANIMATIONS
-@keyframes chapterLine {
-  from {
-    top: 0%;
-  }
-  to {
-    top: 100%;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes f1 {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -50%);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-25%, -25%);
-  }
-}
-@keyframes f2 {
-  from {
-    transform: translate(-50%, -50%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(-75%, -25%);
-    opacity: 1;
-  }
-}
-@keyframes f4 {
-  from {
-    transform: translate(-50%, 50%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(-25%, -75%);
-    opacity: 1;
-  }
-}
-@keyframes f5 {
-  from {
-    transform: translate(-50%, 50%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(-75%, -75%);
-    opacity: 1;
-  }
-}
-@keyframes unfold {
-  from {
-    opacity: 0;
-    transform: rotateX(0);
-  }
-  to {
-    opacity: 1;
-    transform: rotateX(360deg);
-  }
-}
-.unfold-0 {
-  animation: unfold 1s 0s 1 forwards;
-}
-.unfold-1 {
-  animation: unfold 1s 0.3s 1 forwards;
-}
-.unfold-2 {
-  animation: unfold 1s 0.6s 1 forwards;
-}
-.unfold-3 {
-  animation: unfold 1s 0.9s 1 forwards;
-}
-.unfold-4 {
-  animation: unfold 1s 1.2s 1 forwards;
-}
-.unfold-5 {
-  animation: unfold 1s 1.5s 1 forwards;
-}
-.unfold-6 {
-  animation: unfold 1s 1.8s 1 forwards;
-}
-
-.fade-0 {
-  animation: fadeIn 1s 0.9s 1 forwards;
-}
-.fade-1 {
-  animation: fadeIn 1s 1.2s 1 forwards;
-}
-.fade-2 {
-  animation: fadeIn 1s 1.5s 1 forwards;
-}
-.fade-3 {
-  animation: fadeIn 1s 1.8s 1 forwards;
-}
-.fade-4 {
-  animation: fadeIn 1s 2.1s 1 forwards;
-}
-.fade-5 {
-  animation: fadeIn 1s 2.4s 1 forwards;
 }
