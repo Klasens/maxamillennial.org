@@ -1,0 +1,456 @@
+/**========================================================================
+ *                           TABLE OF CONTENTS 
+ *========================================================================**/
+
+#sf1 {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+}
+.sf1-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(50deg);
+  top: 15%;
+  left: 64%;
+  @include respond(break-greater-1600) {
+    width: 20%;
+    top: 71%;
+    left: 18%;
+  }
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear reverse;
+  }
+}
+
+#sf2 {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  width: 15rem;
+}
+#sf3 {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+}
+.sf3-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 8%;
+  transform: rotateZ(90deg);
+  top: 10%;
+  left: 40%;
+  @include respond(break-greater-1600) {
+    width: 7%;
+    top: 48%;
+    left: 5%;
+  }
+
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear reverse;
+  }
+}
+#sf4 {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+.sf4-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 8%;
+  transform: rotateZ(10deg);
+  top: 10%;
+  left: 40%;
+  @include respond(break-greater-1600) {
+    width: 12%;
+    top: 10%;
+    left: 36%;
+  }
+
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear;
+  }
+}
+#sf5 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+.sf5-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(15deg);
+  top: 15%;
+  left: 64%;
+  @include respond(break-greater-1600) {
+    width: 8%;
+    top: 14%;
+    left: 61%;
+  }
+
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear;
+  }
+}
+#sf6 {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+}
+.sf6-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(12deg);
+  top: 15%;
+  left: 64%;
+  @include respond(break-greater-1600) {
+    width: 14%;
+    top: 61%;
+    left: 21%;
+  }
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear reverse;
+  }
+}
+#sf7 {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+}
+.sf7-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(58deg);
+  top: 15%;
+  left: 64%;
+  @include respond(break-greater-1600) {
+    width: 26%;
+    top: 76%;
+    left: 15%;
+  }
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear reverse;
+  }
+}
+#sf8 {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+}
+.sf8-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 10%;
+  transform: rotateZ(35deg);
+  top: 15%;
+  left: 64%;
+  @include respond(break-greater-1600) {
+    width: 16%;
+    top: 66%;
+    left: 20%;
+  }
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear reverse;
+  }
+}
+#sf9 {
+  position: absolute;
+  top: 60%;
+  left: 85%;
+}
+.sf9-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(135deg);
+  top: 15%;
+  left: 64%;
+  @include respond(break-greater-1600) {
+    width: 10%;
+    top: 73%;
+    left: 80%;
+  }
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear;
+  }
+}
+#sf10 {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+#sf11 {
+  position: absolute;
+  top: 80%;
+  left: 70%;
+}
+.sf11-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 5%;
+  top: 15%;
+  left: 64%;
+  &--1 {
+    transform: rotateZ(37deg);
+    width: 20%;
+    top: 73%;
+    left: 51%;
+  }
+  &--2 {
+    transform: rotateZ(-25deg);
+    width: 16%;
+    top: 88%;
+    left: 54%;
+  }
+  &--3 {
+    width: 15%;
+    top: 83%;
+    left: 54%;
+  }
+  &--4 {
+    transform: rotateZ(20deg);
+    width: 19%;
+    top: 78%;
+    left: 51%;
+  }
+  @include respond(break-greater-1600) {
+    &--1 {
+      transform: rotateZ(37deg);
+      width: 20%;
+      top: 73%;
+      left: 51%;
+    }
+    &--2 {
+      transform: rotateZ(-25deg);
+      width: 16%;
+      top: 88%;
+      left: 54%;
+    }
+    &--3 {
+      width: 15%;
+      top: 83%;
+      left: 54%;
+    }
+    &--4 {
+      transform: rotateZ(19deg);
+      width: 19%;
+      top: 78%;
+      left: 51%;
+    }
+  }
+
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite reverse linear;
+  }
+}
+#sf12 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#sf13 {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+.sf13-line {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 5%;
+  top: 15%;
+  left: 64%;
+  @include respond(break-greater-1600) {
+    width: 13%;
+    top: 38%;
+    left: 15%;
+  }
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear;
+  }
+}
+#sf14 {
+  position: absolute;
+  top: 15%;
+  left: 70%;
+}
+.sf14-line {
+  &--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear;
+  }
+}
+.sf14-line--1 {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(90deg);
+  top: 15%;
+  left: 64%;
+  @include respond(break-greater-1600) {
+    width: 5%;
+    top: 28%;
+    left: 73%;
+  }
+}
+.sf14-line--2 {
+  position: absolute;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(-40deg);
+  top: 12%;
+  left: 83%;
+  @include respond(break-greater-1600) {
+    width: 7%;
+    top: 12%;
+    left: 83%;
+  }
+}
+#sf15 {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  padding: 1rem 2rem;
+}
+
+.sf15-line {
+  position: relative;
+  background-color: $color-white-opaque;
+  height: 4px;
+  width: 4rem;
+  transform: rotateZ(90deg);
+
+  top: 3rem;
+  &--special {
+    position: absolute;
+    opacity: 1;
+    transform: rotateZ(115deg);
+    width: 7rem;
+    top: 8.5rem;
+    right: 3rem;
+
+    &2 {
+      position: relative;
+      opacity: 0;
+      width: 4rem;
+    }
+  }
+
+  &--movingblock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $color-red;
+    animation: SFLine 2s infinite linear;
+  }
+}
+#sf16 {
+  position: absolute;
+  top: 15%;
+  left: 90%;
+  padding: 1rem 2rem;
+}
+#sf17 {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+  padding: 1rem 2rem;
+}
+#sf18 {
+  position: absolute;
+  top: 35%;
+  left: 90%;
+  padding: 1rem 2rem;
+}
+#sf19 {
+  position: absolute;
+  top: 45%;
+  left: 90%;
+  padding: 1rem 2rem;
+}

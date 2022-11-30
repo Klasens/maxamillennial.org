@@ -2117,161 +2117,6 @@ a {
   font-size: 4rem;
   color: #f20000; }
 
-#sf1 {
-  position: absolute;
-  top: 80%;
-  left: 45%; }
-
-#sf2 {
-  position: absolute;
-  top: 35%;
-  left: 70%;
-  width: 15rem; }
-
-#sf3 {
-  position: absolute;
-  top: 70%;
-  left: 25%; }
-
-#sf4 {
-  position: absolute;
-  top: 5%;
-  left: 25%; }
-
-.sf4-line {
-  position: absolute;
-  background-color: rgba(233, 233, 233, 0.75);
-  height: 4px;
-  width: 12%;
-  transform: rotateZ(10deg);
-  top: 10%;
-  left: 37%;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Larger than - 1600
-   @include respond(break-greater-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector > 1800
-   @include respond(break-1800) {}
-   *=============================================**/ }
-  @media (min-width: 100em) {
-    .sf4-line {
-      top: 10%;
-      left: 36%; } }
-  .sf4-line--movingBlock {
-    position: absolute;
-    border-radius: 2px;
-    top: 0;
-    width: 4px;
-    height: 4px;
-    background-color: #fc3b3b;
-    animation: SFLine 2s infinite linear; }
-
-#sf5 {
-  position: absolute;
-  top: 10%;
-  left: 50%; }
-
-#sf6 {
-  position: absolute;
-  top: 60%;
-  left: 45%; }
-
-#sf7 {
-  position: absolute;
-  top: 90%;
-  left: 45%; }
-
-#sf8 {
-  position: absolute;
-  top: 70%;
-  left: 45%; }
-
-#sf9 {
-  position: absolute;
-  top: 60%;
-  left: 85%; }
-
-#sf10 {
-  position: absolute;
-  top: 40%;
-  left: 30%; }
-
-#sf11 {
-  position: absolute;
-  top: 75%;
-  left: 70%; }
-
-#sf12 {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-#sf13 {
-  position: absolute;
-  top: 55%;
-  left: 20%; }
-
-#sf14 {
-  position: absolute;
-  top: 15%;
-  left: 70%; }
-
-#sf15 {
-  position: absolute;
-  top: 5%;
-  left: 90%;
-  padding: 1rem 2rem; }
-
-#sf16 {
-  position: absolute;
-  top: 15%;
-  left: 90%;
-  padding: 1rem 2rem; }
-
-#sf17 {
-  position: absolute;
-  top: 25%;
-  left: 90%;
-  padding: 1rem 2rem; }
-
-#sf18 {
-  position: absolute;
-  top: 35%;
-  left: 90%;
-  padding: 1rem 2rem; }
-
-#sf19 {
-  position: absolute;
-  top: 45%;
-  left: 90%;
-  padding: 1rem 2rem; }
-
 /**========================================================================
  *                           TABLE OF CONTENTS 
  *========================================================================**/
@@ -2377,6 +2222,811 @@ a {
   top: 50%;
   border-radius: 15px;
   background-color: rgba(47, 193, 250, 0.4); }
+
+/**========================================================================
+ *                           TABLE OF CONTENTS 
+ *========================================================================**/
+#sf1 {
+  position: absolute;
+  top: 80%;
+  left: 35%; }
+
+.sf1-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(50deg);
+  top: 15%;
+  left: 64%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf1-line {
+      width: 20%;
+      top: 71%;
+      left: 18%; } }
+  .sf1-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear reverse; }
+
+#sf2 {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  width: 15rem; }
+
+#sf3 {
+  position: absolute;
+  top: 55%;
+  left: 5%; }
+
+.sf3-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 8%;
+  transform: rotateZ(90deg);
+  top: 10%;
+  left: 40%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf3-line {
+      width: 7%;
+      top: 48%;
+      left: 5%; } }
+  .sf3-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear reverse; }
+
+#sf4 {
+  position: absolute;
+  top: 5%;
+  left: 25%; }
+
+.sf4-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 8%;
+  transform: rotateZ(10deg);
+  top: 10%;
+  left: 40%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf4-line {
+      width: 12%;
+      top: 10%;
+      left: 36%; } }
+  .sf4-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear; }
+
+#sf5 {
+  position: absolute;
+  top: 10%;
+  left: 50%; }
+
+.sf5-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(15deg);
+  top: 15%;
+  left: 64%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf5-line {
+      width: 8%;
+      top: 14%;
+      left: 61%; } }
+  .sf5-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear; }
+
+#sf6 {
+  position: absolute;
+  top: 60%;
+  left: 35%; }
+
+.sf6-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(12deg);
+  top: 15%;
+  left: 64%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf6-line {
+      width: 14%;
+      top: 61%;
+      left: 21%; } }
+  .sf6-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear reverse; }
+
+#sf7 {
+  position: absolute;
+  top: 90%;
+  left: 35%; }
+
+.sf7-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(58deg);
+  top: 15%;
+  left: 64%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf7-line {
+      width: 26%;
+      top: 76%;
+      left: 15%; } }
+  .sf7-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear reverse; }
+
+#sf8 {
+  position: absolute;
+  top: 70%;
+  left: 35%; }
+
+.sf8-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 10%;
+  transform: rotateZ(35deg);
+  top: 15%;
+  left: 64%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf8-line {
+      width: 16%;
+      top: 66%;
+      left: 20%; } }
+  .sf8-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear reverse; }
+
+#sf9 {
+  position: absolute;
+  top: 60%;
+  left: 85%; }
+
+.sf9-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(135deg);
+  top: 15%;
+  left: 64%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf9-line {
+      width: 10%;
+      top: 73%;
+      left: 80%; } }
+  .sf9-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear; }
+
+#sf10 {
+  position: absolute;
+  top: 35%;
+  left: 30%; }
+
+#sf11 {
+  position: absolute;
+  top: 80%;
+  left: 70%; }
+
+.sf11-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 5%;
+  top: 15%;
+  left: 64%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  .sf11-line--1 {
+    transform: rotateZ(37deg);
+    width: 20%;
+    top: 73%;
+    left: 51%; }
+  .sf11-line--2 {
+    transform: rotateZ(-25deg);
+    width: 16%;
+    top: 88%;
+    left: 54%; }
+  .sf11-line--3 {
+    width: 15%;
+    top: 83%;
+    left: 54%; }
+  .sf11-line--4 {
+    transform: rotateZ(20deg);
+    width: 19%;
+    top: 78%;
+    left: 51%; }
+  @media (min-width: 100em) {
+    .sf11-line--1 {
+      transform: rotateZ(37deg);
+      width: 20%;
+      top: 73%;
+      left: 51%; }
+    .sf11-line--2 {
+      transform: rotateZ(-25deg);
+      width: 16%;
+      top: 88%;
+      left: 54%; }
+    .sf11-line--3 {
+      width: 15%;
+      top: 83%;
+      left: 54%; }
+    .sf11-line--4 {
+      transform: rotateZ(19deg);
+      width: 19%;
+      top: 78%;
+      left: 51%; } }
+  .sf11-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite reverse linear; }
+
+#sf12 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#sf13 {
+  position: absolute;
+  top: 35%;
+  left: 5%; }
+
+.sf13-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 5%;
+  top: 15%;
+  left: 64%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf13-line {
+      width: 13%;
+      top: 38%;
+      left: 15%; } }
+  .sf13-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear; }
+
+#sf14 {
+  position: absolute;
+  top: 15%;
+  left: 70%; }
+
+.sf14-line--movingBlock {
+  position: absolute;
+  border-radius: 2px;
+  top: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #fc3b3b;
+  animation: SFLine 2s infinite linear; }
+
+.sf14-line--1 {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(90deg);
+  top: 15%;
+  left: 64%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf14-line--1 {
+      width: 5%;
+      top: 28%;
+      left: 73%; } }
+
+.sf14-line--2 {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 5%;
+  transform: rotateZ(-40deg);
+  top: 12%;
+  left: 83%;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf14-line--2 {
+      width: 7%;
+      top: 12%;
+      left: 83%; } }
+
+#sf15 {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  padding: 1rem 2rem; }
+
+.sf15-line {
+  position: relative;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 4rem;
+  transform: rotateZ(90deg);
+  top: 3rem; }
+  .sf15-line--special {
+    position: absolute;
+    opacity: 1;
+    transform: rotateZ(115deg);
+    width: 7rem;
+    top: 8.5rem;
+    right: 3rem; }
+    .sf15-line--special2 {
+      position: relative;
+      opacity: 0;
+      width: 4rem; }
+  .sf15-line--movingblock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear; }
+
+#sf16 {
+  position: absolute;
+  top: 15%;
+  left: 90%;
+  padding: 1rem 2rem; }
+
+#sf17 {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+  padding: 1rem 2rem; }
+
+#sf18 {
+  position: absolute;
+  top: 35%;
+  left: 90%;
+  padding: 1rem 2rem; }
+
+#sf19 {
+  position: absolute;
+  top: 45%;
+  left: 90%;
+  padding: 1rem 2rem; }
 
 /**========================================================================
  *                          JAVASCRIPT 
