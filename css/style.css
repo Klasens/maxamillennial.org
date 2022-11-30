@@ -2272,6 +2272,7 @@ a {
    *=============================================**/ }
   @media (min-width: 100em) {
     .sf1-line {
+      transform: rotateZ(50deg);
       width: 20%;
       top: 71%;
       left: 18%; } }
@@ -2514,6 +2515,7 @@ a {
    *=============================================**/ }
   @media (min-width: 100em) {
     .sf6-line {
+      transform: rotateZ(12deg);
       width: 14%;
       top: 61%;
       left: 21%; } }
@@ -2573,6 +2575,7 @@ a {
    *=============================================**/ }
   @media (min-width: 100em) {
     .sf7-line {
+      transform: rotateZ(58deg);
       width: 26%;
       top: 76%;
       left: 15%; } }
