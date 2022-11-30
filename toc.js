@@ -10,6 +10,14 @@ const tocPoetryLink = document.querySelector('#toc-poetry');
 // DISPLAYS
 const tocChaptersDisplay = document.querySelector('#toc-chaptersDisplay');
 const tocFictionDisplay = document.querySelector('#toc-fictionDisplay');
+const tocLFNonfictionDisplay = document.querySelector('#toc-LFDisplay');
+const tocSFNonfictionDisplay = document.querySelector('#toc-SFDisplay');
+const tocAphorismsDisplay = document.querySelector('#toc-aphorismsDisplay');
+const tocPoetryDisplay = document.querySelector('#toc-poetryDisplay');
+
+// SUB DISPLAYS
+const tocLFSet1 = document.querySelector('.toc-set1--LF');
+const tocLFSet2 = document.querySelector('.toc-set2--LF');
 
 // CHAPTER SELECTORS
 const c0 = document.querySelector('#c0');
@@ -37,6 +45,7 @@ const f5 = document.querySelector('#f5');
 const showChapters = function () {
   tocChaptersDisplay.classList.add('opacity-1');
   tocChaptersDisplay.classList.add('z-index-10');
+  tocChaptersDisplay.classList.remove('pointerEvents-none');
   c0.classList.add('unfold-c0');
   c1.classList.add('unfold-c1');
   c2.classList.add('unfold-c2');
@@ -53,6 +62,7 @@ const showChapters = function () {
 };
 
 const showFiction = function () {
+  tocFictionDisplay.classList.remove('pointerEvents-none');
   tocFictionDisplay.classList.add('z-index-10');
   f1.classList.add('fade-f1');
   f2.classList.add('fade-f2');
@@ -60,10 +70,15 @@ const showFiction = function () {
   f4.classList.add('fade-f4');
   f5.classList.add('fade-f5');
 };
+const showNonfictionLF = function () {
+  tocLFSet1.classList.add('fadeIn-LF1');
+  tocLFSet2.classList.add('fadeIn-LF2');
+};
 // HIDE FUNCTIONS
 const hideChapters = function () {
   tocChaptersDisplay.classList.remove('opacity-1');
   tocChaptersDisplay.classList.remove('z-index-10');
+  tocChaptersDisplay.classList.add('pointerEvents-none');
   c0.classList.remove('unfold-c0');
   c1.classList.remove('unfold-c1');
   c2.classList.remove('unfold-c2');
@@ -80,20 +95,33 @@ const hideChapters = function () {
 };
 
 const hideFiction = function () {
+  tocFictionDisplay.classList.add('pointerEvents-none');
   f1.classList.remove('fade-f1');
   f2.classList.remove('fade-f2');
   f3.classList.remove('fade-f3');
   f4.classList.remove('fade-f4');
   f5.classList.remove('fade-f5');
 };
+const hideNonfictionLF = function () {
+  tocLFSet1.classList.remove('fadeIn-LF1');
+  tocLFSet2.classList.remove('fadeIn-LF2');
+};
 
 // EVENT LISTENERS
 tocChaptersLink.addEventListener('click', function () {
   showChapters();
   hideFiction();
+  hideNonfictionLF();
 });
 
 tocFictionLink.addEventListener('click', function () {
   hideChapters();
   showFiction();
+  hideNonfictionLF();
+});
+
+tocLFLink.addEventListener('click', function () {
+  showNonfictionLF();
+  hideChapters();
+  hideFiction();
 });

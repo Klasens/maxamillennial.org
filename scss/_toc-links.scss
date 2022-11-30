@@ -2,54 +2,6 @@
  *                           TABLE OF CONTENTS 
  *========================================================================**/
 
-.toc {
-  width: 100%;
-  display: flex;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url('../img/toc-crop.jpg');
-  background-size: cover;
-
-  @include respond(break-greater-1600) {
-    height: 90vh;
-  }
-  &-mainLinks {
-    width: 30%;
-    display: grid;
-    place-items: center;
-
-    &--container {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  &-pieceLinks {
-    position: relative;
-    width: 70%;
-    display: grid;
-    place-items: center;
-
-    &--chapters {
-      display: flex;
-      height: 80%;
-      flex-direction: column;
-      opacity: 0;
-      transition: opacity 1s;
-    }
-    &--fiction {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      opacity: 1;
-      transition: opacity 1s;
-    }
-  }
-}
 .mainLink {
   color: $color-black;
   background-color: $color-white-opaque;
@@ -90,6 +42,26 @@
     border-radius: 5px;
     text-align: center;
   }
+  &-LF {
+    padding: 1rem 0.5rem;
+    font-size: 1.8rem;
+    width: 25rem;
+    border-radius: 25px;
+    text-align: center;
+    transition: opacity 0.5s;
+    margin: 1rem;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-SF {
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.5s;
+    opacity: 1;
+  }
 
   &-afterLine {
     opacity: 0;
@@ -109,4 +81,11 @@
       animation: chapterLine 2s infinite linear;
     }
   }
+}
+
+.header-LF {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  color: $color-deep-red;
 }

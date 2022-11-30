@@ -151,6 +151,12 @@
     transform: translate(-75%, -75%);
     opacity: 1; } }
 
+.fadeIn-LF1 {
+  animation: fadeIn 1s 1 forwards; }
+
+.fadeIn-LF2 {
+  animation: fadeIn 1s 1s 1 forwards; }
+
 /**========================================================================
  *                           BASE
  *========================================================================**/
@@ -2028,6 +2034,83 @@ a {
 /**========================================================================
  *                           TABLE OF CONTENTS 
  *========================================================================**/
+.mainLink {
+  color: #333333;
+  background-color: rgba(233, 233, 233, 0.75);
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.5s; }
+  .mainLink:hover {
+    background-color: rgba(86, 210, 112, 0.85); }
+
+.pieceLink {
+  position: relative;
+  font-size: 2rem;
+  opacity: 0;
+  color: #333333;
+  background-color: rgba(233, 233, 233, 0.75);
+  transition: background-color 0.3s; }
+  .pieceLink:hover {
+    background-color: rgba(253, 114, 114, 0.9); }
+  .pieceLink-chapter {
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.5s; }
+  .pieceLink-fiction {
+    position: absolute;
+    padding: 3rem 1rem;
+    width: 15rem;
+    border-radius: 5px;
+    text-align: center; }
+  .pieceLink-LF {
+    padding: 1rem 0.5rem;
+    font-size: 1.8rem;
+    width: 25rem;
+    border-radius: 25px;
+    text-align: center;
+    transition: opacity 0.5s;
+    margin: 1rem;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .pieceLink-SF {
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.5s;
+    opacity: 1; }
+  .pieceLink-afterLine {
+    opacity: 0;
+    height: 5rem;
+    width: 4px;
+    position: relative;
+    background-color: white;
+    align-self: center;
+    transition: opacity 1s; }
+    .pieceLink-afterLine--movingBlock {
+      position: absolute;
+      border-radius: 2px;
+      top: 0;
+      width: 4px;
+      height: 4px;
+      background-color: #fc3b3b;
+      animation: chapterLine 2s infinite linear; }
+
+.header-LF {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  color: #f20000; }
+
+/**========================================================================
+ *                           TABLE OF CONTENTS 
+ *========================================================================**/
 .toc {
   width: 100%;
   display: flex;
@@ -2094,56 +2177,43 @@ a {
       flex-direction: column;
       opacity: 1;
       transition: opacity 1s; }
-
-.mainLink {
-  color: #333333;
-  background-color: rgba(233, 233, 233, 0.75);
-  font-size: 2rem;
-  padding: 1.5rem 1rem;
-  margin: 1rem;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.5s; }
-  .mainLink:hover {
-    background-color: rgba(86, 210, 112, 0.85); }
-
-.pieceLink {
-  position: relative;
-  font-size: 2rem;
-  opacity: 0;
-  color: #333333;
-  background-color: rgba(233, 233, 233, 0.75);
-  transition: background-color 0.3s; }
-  .pieceLink:hover {
-    background-color: rgba(253, 114, 114, 0.9); }
-  .pieceLink-chapter {
-    padding: 1.5rem 1rem;
-    border-radius: 5px;
-    text-align: center;
-    transition: opacity 0.5s; }
-  .pieceLink-fiction {
-    position: absolute;
-    padding: 3rem 1rem;
-    width: 15rem;
-    border-radius: 5px;
-    text-align: center; }
-  .pieceLink-afterLine {
-    opacity: 0;
-    height: 5rem;
-    width: 4px;
-    position: relative;
-    background-color: white;
-    align-self: center;
-    transition: opacity 1s; }
-    .pieceLink-afterLine--movingBlock {
-      position: absolute;
-      border-radius: 2px;
+    .toc-pieceLinks--LF {
       top: 0;
-      width: 4px;
-      height: 4px;
-      background-color: #fc3b3b;
-      animation: chapterLine 2s infinite linear; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 1s; }
+    .toc-pieceLinks--SF {
+      position: absolute;
+      display: flex;
+      display: none;
+      height: 80%;
+      flex-direction: column;
+      opacity: 1;
+      transition: opacity 1s; }
+
+.toc-set1--LF {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  justify-content: center;
+  position: absolute;
+  width: 75%;
+  top: 10%;
+  border-radius: 15px;
+  background-color: rgba(47, 193, 250, 0.4); }
+
+.toc-set2--LF {
+  display: flex;
+  opacity: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  width: 75%;
+  top: 50%;
+  border-radius: 15px;
+  background-color: rgba(47, 193, 250, 0.4); }
 
 /**========================================================================
  *                          JAVASCRIPT 
