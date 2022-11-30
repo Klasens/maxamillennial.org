@@ -147,3 +147,18 @@
 .fadeIn-LF2 {
   animation: fadeIn 1s 1s 1 forwards;
 }
+
+//NONFICTION SF
+
+.fadeIn-SF1 {
+  animation: fadeIn 1s 1 forwards;
+}
+
+@keyframes SFLine {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}

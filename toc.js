@@ -44,7 +44,6 @@ const f5 = document.querySelector('#f5');
 // SHOW FUNCTIONS
 const showChapters = function () {
   tocChaptersDisplay.classList.add('opacity-1');
-  tocChaptersDisplay.classList.add('z-index-10');
   tocChaptersDisplay.classList.remove('pointerEvents-none');
   c0.classList.add('unfold-c0');
   c1.classList.add('unfold-c1');
@@ -63,7 +62,6 @@ const showChapters = function () {
 
 const showFiction = function () {
   tocFictionDisplay.classList.remove('pointerEvents-none');
-  tocFictionDisplay.classList.add('z-index-10');
   f1.classList.add('fade-f1');
   f2.classList.add('fade-f2');
   f3.classList.add('fade-f3');
@@ -71,13 +69,17 @@ const showFiction = function () {
   f5.classList.add('fade-f5');
 };
 const showNonfictionLF = function () {
+  tocLFNonfictionDisplay.classList.remove('pointerEvents-none');
   tocLFSet1.classList.add('fadeIn-LF1');
   tocLFSet2.classList.add('fadeIn-LF2');
+};
+const showNonfictionSF = function () {
+  tocSFNonfictionDisplay.classList.remove('pointerEvents-none');
+  tocSFNonfictionDisplay.classList.add('fadeIn-SF1');
 };
 // HIDE FUNCTIONS
 const hideChapters = function () {
   tocChaptersDisplay.classList.remove('opacity-1');
-  tocChaptersDisplay.classList.remove('z-index-10');
   tocChaptersDisplay.classList.add('pointerEvents-none');
   c0.classList.remove('unfold-c0');
   c1.classList.remove('unfold-c1');
@@ -103,8 +105,13 @@ const hideFiction = function () {
   f5.classList.remove('fade-f5');
 };
 const hideNonfictionLF = function () {
+  tocLFNonfictionDisplay.classList.add('pointerEvents-none');
   tocLFSet1.classList.remove('fadeIn-LF1');
   tocLFSet2.classList.remove('fadeIn-LF2');
+};
+const hideNonfictionSF = function () {
+  tocSFNonfictionDisplay.classList.add('pointerEvents-none');
+  tocSFNonfictionDisplay.classList.remove('fadeIn-SF1');
 };
 
 // EVENT LISTENERS
@@ -112,16 +119,26 @@ tocChaptersLink.addEventListener('click', function () {
   showChapters();
   hideFiction();
   hideNonfictionLF();
+  hideNonfictionSF();
 });
 
 tocFictionLink.addEventListener('click', function () {
   hideChapters();
   showFiction();
   hideNonfictionLF();
+  hideNonfictionSF();
 });
 
 tocLFLink.addEventListener('click', function () {
   showNonfictionLF();
   hideChapters();
   hideFiction();
+  hideNonfictionSF();
+});
+
+tocSFLink.addEventListener('click', function () {
+  showNonfictionSF();
+  hideChapters();
+  hideFiction();
+  hideNonfictionLF();
 });

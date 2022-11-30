@@ -157,6 +157,15 @@
 .fadeIn-LF2 {
   animation: fadeIn 1s 1s 1 forwards; }
 
+.fadeIn-SF1 {
+  animation: fadeIn 1s 1 forwards; }
+
+@keyframes SFLine {
+  from {
+    left: 0%; }
+  to {
+    left: 100%; } }
+
 /**========================================================================
  *                           BASE
  *========================================================================**/
@@ -2108,6 +2117,125 @@ a {
   font-size: 4rem;
   color: #f20000; }
 
+#sf1 {
+  position: absolute;
+  top: 80%;
+  left: 45%; }
+
+#sf2 {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  width: 15rem; }
+
+#sf3 {
+  position: absolute;
+  top: 70%;
+  left: 25%; }
+
+#sf4 {
+  position: absolute;
+  top: 5%;
+  left: 25%; }
+
+.sf4-line {
+  position: absolute;
+  background-color: rgba(233, 233, 233, 0.75);
+  height: 4px;
+  width: 12%;
+  transform: rotateZ(10deg);
+  top: 10%;
+  left: 36%; }
+  .sf4-line--movingBlock {
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #fc3b3b;
+    animation: SFLine 2s infinite linear; }
+
+#sf5 {
+  position: absolute;
+  top: 10%;
+  left: 50%; }
+
+#sf6 {
+  position: absolute;
+  top: 60%;
+  left: 45%; }
+
+#sf7 {
+  position: absolute;
+  top: 90%;
+  left: 45%; }
+
+#sf8 {
+  position: absolute;
+  top: 70%;
+  left: 45%; }
+
+#sf9 {
+  position: absolute;
+  top: 60%;
+  left: 85%; }
+
+#sf10 {
+  position: absolute;
+  top: 40%;
+  left: 30%; }
+
+#sf11 {
+  position: absolute;
+  top: 75%;
+  left: 70%; }
+
+#sf12 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#sf13 {
+  position: absolute;
+  top: 55%;
+  left: 20%; }
+
+#sf14 {
+  position: absolute;
+  top: 15%;
+  left: 70%; }
+
+#sf15 {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  padding: 1rem 2rem; }
+
+#sf16 {
+  position: absolute;
+  top: 15%;
+  left: 90%;
+  padding: 1rem 2rem; }
+
+#sf17 {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+  padding: 1rem 2rem; }
+
+#sf18 {
+  position: absolute;
+  top: 35%;
+  left: 90%;
+  padding: 1rem 2rem; }
+
+#sf19 {
+  position: absolute;
+  top: 45%;
+  left: 90%;
+  padding: 1rem 2rem; }
+
 /**========================================================================
  *                           TABLE OF CONTENTS 
  *========================================================================**/
@@ -2185,9 +2313,7 @@ a {
       opacity: 1;
       transition: opacity 1s; }
     .toc-pieceLinks--SF {
-      position: absolute;
       display: flex;
-      display: none;
       height: 80%;
       flex-direction: column;
       opacity: 1;
