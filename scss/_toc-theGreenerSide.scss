@@ -1,5 +1,4 @@
-/**========================================================================
- *                           TABLE OF CONTENTS 
+/**======================================================================== *                           TABLE OF CONTENTS 
  *========================================================================**/
 
 #sf1 {
@@ -11,10 +10,10 @@
   position: absolute;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 5%;
-  transform: rotateZ(50deg);
-  top: 15%;
-  left: 64%;
+  width: 17%;
+  transform: rotateZ(53deg);
+  top: 72%;
+  left: 21%;
   @include respond(break-greater-1600) {
     width: 20%;
     top: 71%;
@@ -46,10 +45,10 @@
   position: absolute;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 8%;
+  width: 6%;
   transform: rotateZ(90deg);
-  top: 10%;
-  left: 40%;
+  top: 49%;
+  left: 5%;
   @include respond(break-greater-1600) {
     width: 7%;
     top: 48%;
@@ -133,10 +132,10 @@
   position: absolute;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 5%;
-  transform: rotateZ(12deg);
-  top: 15%;
-  left: 64%;
+  width: 11%;
+  transform: rotateZ(11deg);
+  top: 62%;
+  left: 24%;
   @include respond(break-greater-1600) {
     width: 14%;
     top: 61%;
@@ -161,10 +160,10 @@
   position: absolute;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 5%;
-  transform: rotateZ(58deg);
-  top: 15%;
-  left: 64%;
+  width: 23%;
+  transform: rotateZ(63deg);
+  top: 78%;
+  left: 18%;
   @include respond(break-greater-1600) {
     width: 26%;
     top: 76%;
@@ -189,10 +188,10 @@
   position: absolute;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 10%;
+  width: 13%;
   transform: rotateZ(35deg);
-  top: 15%;
-  left: 64%;
+  top: 67%;
+  left: 23%;
   @include respond(break-greater-1600) {
     width: 16%;
     top: 66%;
@@ -217,10 +216,10 @@
   position: absolute;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 5%;
+  width: 8%;
   transform: rotateZ(135deg);
-  top: 15%;
-  left: 64%;
+  top: 74%;
+  left: 80%;
   @include respond(break-greater-1600) {
     width: 10%;
     top: 73%;
@@ -255,26 +254,26 @@
   left: 64%;
   &--1 {
     transform: rotateZ(37deg);
-    width: 20%;
-    top: 73%;
-    left: 51%;
+    width: 15%;
+    top: 74%;
+    left: 56%;
   }
   &--2 {
     transform: rotateZ(-25deg);
-    width: 16%;
+    width: 11%;
     top: 88%;
-    left: 54%;
+    left: 59%;
   }
   &--3 {
-    width: 15%;
+    width: 11%;
     top: 83%;
-    left: 54%;
+    left: 58%;
   }
   &--4 {
     transform: rotateZ(20deg);
-    width: 19%;
+    width: 16%;
     top: 78%;
-    left: 51%;
+    left: 54%;
   }
   @include respond(break-greater-1600) {
     &--1 {
@@ -328,9 +327,9 @@
   position: absolute;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 5%;
-  top: 15%;
-  left: 64%;
+  width: 11%;
+  top: 38%;
+  left: 17%;
   @include respond(break-greater-1600) {
     width: 13%;
     top: 38%;
@@ -366,10 +365,10 @@
   position: absolute;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 5%;
+  width: 6%;
   transform: rotateZ(90deg);
-  top: 15%;
-  left: 64%;
+  top: 29%;
+  left: 73%;
   @include respond(break-greater-1600) {
     width: 5%;
     top: 28%;
@@ -382,8 +381,8 @@
   height: 4px;
   width: 5%;
   transform: rotateZ(-40deg);
-  top: 12%;
-  left: 83%;
+  top: 11%;
+  left: 85%;
   @include respond(break-greater-1600) {
     width: 7%;
     top: 12%;
@@ -401,22 +400,36 @@
   position: relative;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 4rem;
+  width: 2rem;
+  top: 2rem;
   transform: rotateZ(90deg);
-
-  top: 3rem;
+  @include respond(break-greater-1600) {
+    width: 4rem;
+    transform: rotateZ(90deg);
+    top: 3rem;
+  }
   &--special {
     position: absolute;
     opacity: 1;
     transform: rotateZ(115deg);
-    width: 7rem;
-    top: 8.5rem;
+    width: 3rem;
+    top: 7rem;
     right: 3rem;
 
     &2 {
+      width: 2rem;
+      top: 2rem;
       position: relative;
       opacity: 0;
-      width: 4rem;
+      @include respond(break-greater-1600) {
+        width: 4rem;
+      }
+    }
+    @include respond(break-greater-1600) {
+      transform: rotateZ(115deg);
+      width: 6rem;
+      top: 8.5rem;
+      right: 3rem;
     }
   }
 

@@ -2223,8 +2223,7 @@ a {
   border-radius: 15px;
   background-color: rgba(47, 193, 250, 0.4); }
 
-/**========================================================================
- *                           TABLE OF CONTENTS 
+/**======================================================================== *                           TABLE OF CONTENTS 
  *========================================================================**/
 #sf1 {
   position: absolute;
@@ -2235,10 +2234,10 @@ a {
   position: absolute;
   background-color: rgba(233, 233, 233, 0.75);
   height: 4px;
-  width: 5%;
-  transform: rotateZ(50deg);
-  top: 15%;
-  left: 64%;
+  width: 17%;
+  transform: rotateZ(53deg);
+  top: 72%;
+  left: 21%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2300,10 +2299,10 @@ a {
   position: absolute;
   background-color: rgba(233, 233, 233, 0.75);
   height: 4px;
-  width: 8%;
+  width: 6%;
   transform: rotateZ(90deg);
-  top: 10%;
-  left: 40%;
+  top: 49%;
+  left: 5%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2477,10 +2476,10 @@ a {
   position: absolute;
   background-color: rgba(233, 233, 233, 0.75);
   height: 4px;
-  width: 5%;
-  transform: rotateZ(12deg);
-  top: 15%;
-  left: 64%;
+  width: 11%;
+  transform: rotateZ(11deg);
+  top: 62%;
+  left: 24%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2536,10 +2535,10 @@ a {
   position: absolute;
   background-color: rgba(233, 233, 233, 0.75);
   height: 4px;
-  width: 5%;
-  transform: rotateZ(58deg);
-  top: 15%;
-  left: 64%;
+  width: 23%;
+  transform: rotateZ(63deg);
+  top: 78%;
+  left: 18%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2595,10 +2594,10 @@ a {
   position: absolute;
   background-color: rgba(233, 233, 233, 0.75);
   height: 4px;
-  width: 10%;
+  width: 13%;
   transform: rotateZ(35deg);
-  top: 15%;
-  left: 64%;
+  top: 67%;
+  left: 23%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2654,10 +2653,10 @@ a {
   position: absolute;
   background-color: rgba(233, 233, 233, 0.75);
   height: 4px;
-  width: 5%;
+  width: 8%;
   transform: rotateZ(135deg);
-  top: 15%;
-  left: 64%;
+  top: 74%;
+  left: 80%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2755,23 +2754,23 @@ a {
    *=============================================**/ }
   .sf11-line--1 {
     transform: rotateZ(37deg);
-    width: 20%;
-    top: 73%;
-    left: 51%; }
+    width: 15%;
+    top: 74%;
+    left: 56%; }
   .sf11-line--2 {
     transform: rotateZ(-25deg);
-    width: 16%;
+    width: 11%;
     top: 88%;
-    left: 54%; }
+    left: 59%; }
   .sf11-line--3 {
-    width: 15%;
+    width: 11%;
     top: 83%;
-    left: 54%; }
+    left: 58%; }
   .sf11-line--4 {
     transform: rotateZ(20deg);
-    width: 19%;
+    width: 16%;
     top: 78%;
-    left: 51%; }
+    left: 54%; }
   @media (min-width: 100em) {
     .sf11-line--1 {
       transform: rotateZ(37deg);
@@ -2816,9 +2815,9 @@ a {
   position: absolute;
   background-color: rgba(233, 233, 233, 0.75);
   height: 4px;
-  width: 5%;
-  top: 15%;
-  left: 64%;
+  width: 11%;
+  top: 38%;
+  left: 17%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2883,10 +2882,10 @@ a {
   position: absolute;
   background-color: rgba(233, 233, 233, 0.75);
   height: 4px;
-  width: 5%;
+  width: 6%;
   transform: rotateZ(90deg);
-  top: 15%;
-  left: 64%;
+  top: 29%;
+  left: 73%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2931,8 +2930,8 @@ a {
   height: 4px;
   width: 5%;
   transform: rotateZ(-40deg);
-  top: 12%;
-  left: 83%;
+  top: 11%;
+  left: 85%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2981,20 +2980,131 @@ a {
   position: relative;
   background-color: rgba(233, 233, 233, 0.75);
   height: 4px;
-  width: 4rem;
+  width: 2rem;
+  top: 2rem;
   transform: rotateZ(90deg);
-  top: 3rem; }
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .sf15-line {
+      width: 4rem;
+      transform: rotateZ(90deg);
+      top: 3rem; } }
   .sf15-line--special {
     position: absolute;
     opacity: 1;
     transform: rotateZ(115deg);
-    width: 7rem;
-    top: 8.5rem;
-    right: 3rem; }
+    width: 3rem;
+    top: 7rem;
+    right: 3rem;
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
     .sf15-line--special2 {
+      width: 2rem;
+      top: 2rem;
       position: relative;
       opacity: 0;
-      width: 4rem; }
+      /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+      /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+      @media (min-width: 100em) {
+        .sf15-line--special2 {
+          width: 4rem; } }
+    @media (min-width: 100em) {
+      .sf15-line--special {
+        transform: rotateZ(115deg);
+        width: 6rem;
+        top: 8.5rem;
+        right: 3rem; } }
   .sf15-line--movingblock {
     position: absolute;
     border-radius: 2px;
