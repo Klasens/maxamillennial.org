@@ -118,7 +118,11 @@
   width: 12%;
   transform: rotateZ(10deg);
   top: 10%;
-  left: 36%;
+  left: 37%;
+  @include respond(break-greater-1600) {
+    top: 10%;
+    left: 36%;
+  }
 
   &--movingBlock {
     position: absolute;
