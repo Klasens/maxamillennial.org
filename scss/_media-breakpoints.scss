@@ -59,8 +59,8 @@
   }
 
   /**============================================
-   *                Larger than - 1400
-   @include respond(break-greater-1400) {}
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
    *=============================================**/
 
   @if $breakpoint == break-greater-1600 {

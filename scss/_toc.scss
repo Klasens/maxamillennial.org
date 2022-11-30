@@ -13,6 +13,9 @@
     url('../img/toc-crop.jpg');
   background-size: cover;
 
+  @include respond(break-greater-1600) {
+    height: 90vh;
+  }
   &-mainLinks {
     width: 30%;
     display: grid;
