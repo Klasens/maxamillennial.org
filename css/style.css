@@ -466,8 +466,7 @@ a {
 .subNav {
   position: absolute;
   opacity: 0;
-  transition: opacity 0.1s;
-  transition-delay: 0.3s;
+  transition: opacity 0.2s;
   background-color: #464646;
   transform: translateX(80%);
   top: 0%;
