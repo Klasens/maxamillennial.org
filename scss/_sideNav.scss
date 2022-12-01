@@ -49,7 +49,7 @@
     @include center_flex_column;
 
     @include respond(break-850) {
-      display: none;
+      // display: none;
     }
     &:hover {
       background-color: $color-green;

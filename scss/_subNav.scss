@@ -19,7 +19,12 @@
   padding: 2rem;
   width: 40rem;
   @include respond(break-850) {
+    width: 100%;
+    height: 100%;
     z-index: 10;
+    transition: none;
+    transition-delay: 0;
+    transform: translateX(0);
   }
 
   & > div:not(:first-child) {
@@ -63,5 +68,6 @@
 .subNav-show {
   opacity: 1;
   width: 100%;
+  height: 100%;
   transform: translate(0, 0);
 }

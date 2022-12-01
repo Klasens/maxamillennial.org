@@ -6,7 +6,7 @@ function displayChaptersList(mediaQuery850) {
     // If media query matches
     console.log('test');
     showSideMenu();
-    showChaptersMobile();
+    showChaptersList();
   }
 }
 function displayFictionList(mediaQuery850) {
@@ -14,16 +14,21 @@ function displayFictionList(mediaQuery850) {
     // If media query matches
     console.log('test');
     showSideMenu();
-    showFictionMobile();
+    showShortStoriesList();
   }
 }
-
 const showChaptersMobile = function () {
   chaptersList.classList.add('subNav-show');
+};
+const hideChaptersMobile = function () {
+  chaptersList.classList.remove('subNav-show');
 };
 
 const showFictionMobile = function () {
   shortStoriesList.classList.add('subNav-show');
+};
+const hideFictionMobile = function () {
+  shortStoriesList.classList.remove('subNav-show');
 };
 
 tocChaptersLink.addEventListener('click', function () {

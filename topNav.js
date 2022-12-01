@@ -74,18 +74,25 @@ const ddArrowReset = function () {
 const listReset = function () {
   chaptersList.classList.remove('opacity-1');
   chaptersList.classList.remove('z-index-10');
+  chaptersList.classList.add('pointerEvents-none');
   shortStoriesList.classList.remove('opacity-1');
   shortStoriesList.classList.remove('z-index-10');
+  shortStoriesList.classList.add('pointerEvents-none');
   nonfictionList_long.classList.remove('opacity-1');
   nonfictionList_long.classList.remove('z-index-10');
+  nonfictionList_long.classList.add('pointerEvents-none');
   nonfictionList_short.classList.remove('opacity-1');
   nonfictionList_short.classList.remove('z-index-10');
+  nonfictionList_short.classList.add('pointerEvents-none');
   aphorismsList.classList.remove('opacity-1');
   aphorismsList.classList.remove('z-index-10');
+  aphorismsList.classList.add('pointerEvents-none');
   articlesList.classList.remove('opacity-1');
   articlesList.classList.remove('z-index-10');
+  articlesList.classList.add('pointerEvents-none');
   poetryList.classList.remove('opacity-1');
   poetryList.classList.remove('z-index-10');
+  poetryList.classList.add('pointerEvents-none');
 };
 
 const showNonfictionList_long = function () {
@@ -104,6 +111,7 @@ const showShortStoriesList = function () {
     ddArrowReset();
     listReset();
   }
+  shortStoriesList.classList.remove('pointerEvents-none');
   shortStoriesList.classList.toggle('opacity-1');
   shortStoriesList.classList.toggle('z-index-10');
   ddArrowShortStories.classList.toggle('rotateZ-90');
@@ -114,6 +122,7 @@ const showChaptersList = function () {
     ddArrowReset();
     listReset();
   }
+  chaptersList.classList.remove('pointerEvents-none');
   chaptersList.classList.toggle('opacity-1');
   chaptersList.classList.toggle('z-index-10');
   ddArrowChapters.classList.toggle('rotateZ-90');
