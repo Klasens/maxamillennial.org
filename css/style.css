@@ -369,6 +369,7 @@ a {
       height: 100%;
       overflow: scroll; } }
   .sideNav-header {
+    text-align: center;
     color: white;
     width: 100%;
     text-decoration: underline;
