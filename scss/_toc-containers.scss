@@ -64,28 +64,70 @@
       opacity: 0;
       transition: opacity 1s;
     }
+
+    &--aphorisms {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      opacity: 0;
+      justify-content: space-around;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--poetry {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      opacity: 1;
+      justify-content: space-around;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
 .toc-set1--LF {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   opacity: 0;
   justify-content: center;
   position: absolute;
-  width: 75%;
   top: 10%;
-  border-radius: 15px;
-  background-color: $color-teal-opaque;
+  left: 15%;
+  border-radius: 10px;
+  background-color: $color-white-opaque-2;
 }
 .toc-set2--LF {
   display: flex;
+  flex-direction: column;
   opacity: 0;
-  flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  width: 75%;
-  top: 50%;
-  border-radius: 15px;
-  background-color: $color-teal-opaque;
+  top: 10%;
+  left: 50%;
+  border-radius: 10px;
+  background-color: $color-white-opaque-2;
+}
+.toc-miniContainer2 {
+  width: 30%;
+  height: 90%;
+  background-color: $color-white-opaque-3;
+  border-radius: 5px;
+}
+.toc-miniContainer {
+  height: 100%;
+  overflow: scroll;
+}
+.toc-pieceDisplay {
+  position: relative;
+  width: 65%;
+  height: 90%;
+  background-color: $color-white-opaque-3;
+  border-radius: 5px;
 }

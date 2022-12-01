@@ -2080,7 +2080,7 @@ a {
     padding: 1rem 0.5rem;
     font-size: 1.8rem;
     width: 25rem;
-    border-radius: 25px;
+    border-radius: 10px;
     text-align: center;
     transition: opacity 0.5s;
     margin: 1rem;
@@ -2094,6 +2094,22 @@ a {
     text-align: center;
     transition: opacity 0.5s;
     opacity: 1; }
+  .pieceLink-aphorism {
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 1;
+    margin: 3px 0; }
+  .pieceLink-poetry {
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 1;
+    margin: 3px 0; }
   .pieceLink-afterLine {
     opacity: 0;
     height: 5rem;
@@ -2116,6 +2132,40 @@ a {
   text-align: center;
   font-size: 4rem;
   color: #f20000; }
+
+.pieceDisplay-header {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 2rem; }
+
+.pieceDisplay-text {
+  margin: 3rem;
+  font-size: 2rem; }
+
+.pieceDisplay-link {
+  margin-left: 3rem;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  background-color: #73b0fb;
+  border-radius: 5px; }
+
+.pieceDisplay-btn {
+  position: absolute;
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+  background-color: #73b0fb;
+  border-radius: 5px;
+  bottom: 3rem;
+  right: 3rem;
+  cursor: pointer; }
+
+.miniContainer-header {
+  width: 100%;
+  font-size: 2.5rem;
+  padding-left: 1rem;
+  text-align: left;
+  text-decoration: underline;
+  background-color: rgba(233, 233, 233, 0.75); }
 
 /**========================================================================
  *                           TABLE OF CONTENTS 
@@ -2200,28 +2250,67 @@ a {
       flex-direction: column;
       opacity: 0;
       transition: opacity 1s; }
+    .toc-pieceLinks--aphorisms {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      opacity: 0;
+      justify-content: space-around;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .toc-pieceLinks--poetry {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      opacity: 1;
+      justify-content: space-around;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .toc-set1--LF {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   opacity: 0;
   justify-content: center;
   position: absolute;
-  width: 75%;
   top: 10%;
-  border-radius: 15px;
-  background-color: rgba(47, 193, 250, 0.4); }
+  left: 15%;
+  border-radius: 10px;
+  background-color: rgba(233, 233, 233, 0.5); }
 
 .toc-set2--LF {
   display: flex;
+  flex-direction: column;
   opacity: 0;
-  flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  width: 75%;
-  top: 50%;
-  border-radius: 15px;
-  background-color: rgba(47, 193, 250, 0.4); }
+  top: 10%;
+  left: 50%;
+  border-radius: 10px;
+  background-color: rgba(233, 233, 233, 0.5); }
+
+.toc-miniContainer2 {
+  width: 30%;
+  height: 90%;
+  background-color: rgba(233, 233, 233, 0.75);
+  border-radius: 5px; }
+
+.toc-miniContainer {
+  height: 100%;
+  overflow: scroll; }
+
+.toc-pieceDisplay {
+  position: relative;
+  width: 65%;
+  height: 90%;
+  background-color: rgba(233, 233, 233, 0.75);
+  border-radius: 5px; }
 
 /**======================================================================== *                           TABLE OF CONTENTS 
  *========================================================================**/

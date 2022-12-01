@@ -46,7 +46,7 @@
     padding: 1rem 0.5rem;
     font-size: 1.8rem;
     width: 25rem;
-    border-radius: 25px;
+    border-radius: 10px;
     text-align: center;
     transition: opacity 0.5s;
     margin: 1rem;
@@ -61,6 +61,25 @@
     text-align: center;
     transition: opacity 0.5s;
     opacity: 1;
+  }
+
+  &-aphorism {
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 1;
+    margin: 3px 0;
+  }
+  &-poetry {
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 1;
+    margin: 3px 0;
   }
 
   &-afterLine {
@@ -88,4 +107,41 @@
   text-align: center;
   font-size: 4rem;
   color: $color-deep-red;
+}
+.pieceDisplay {
+  &-header {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+  &-text {
+    margin: 3rem;
+    font-size: 2rem;
+  }
+  &-link {
+    margin-left: 3rem;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    background-color: $color-blue;
+    border-radius: 5px;
+  }
+}
+
+.pieceDisplay-btn {
+  position: absolute;
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+  background-color: $color-blue;
+  border-radius: 5px;
+  bottom: 3rem;
+  right: 3rem;
+  cursor: pointer;
+}
+.miniContainer-header {
+  width: 100%;
+  font-size: 2.5rem;
+  padding-left: 1rem;
+  text-align: left;
+  text-decoration: underline;
+  background-color: $color-white-opaque;
 }
