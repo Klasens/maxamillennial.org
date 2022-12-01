@@ -1,13 +1,12 @@
 /**========================================================================
  *                          SUB NAV 
  *========================================================================**/
-
 #list-chapters {
-  @include respond(break-850) {
-    opacity: 1;
-    width: 100%;
-    transform: translate(0, 0);
-  }
+  // @include respond(break-850) {
+  //   opacity: 1;
+  //   width: 100%;
+  //   transform: translate(0, 0);
+  // }
 }
 .subNav {
   position: absolute;
@@ -19,6 +18,9 @@
   top: 0%;
   padding: 2rem;
   width: 40rem;
+  @include respond(break-850) {
+    z-index: 10;
+  }
 
   & > div:not(:first-child) {
     margin-top: 1rem;
@@ -56,4 +58,10 @@
       padding: 0.5rem 0;
     }
   }
+}
+
+.subNav-show {
+  opacity: 1;
+  width: 100%;
+  transform: translate(0, 0);
 }

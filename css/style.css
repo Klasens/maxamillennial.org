@@ -376,7 +376,22 @@ a {
     font-size: 2rem;
     font-weight: 300; }
   .sideNav-allLinks {
-    margin: 5rem 0;
+    margin: 5rem 0; }
+    .sideNav-allLinks > div:not(:first-child) {
+      margin-top: 2rem; }
+  .sideNav-link {
+    position: relative;
+    height: 4.5rem;
+    width: 100%;
+    background-color: #5a5a5a;
+    transform: translateY(0);
+    transition: all 0.3s;
+    transition-delay: transform 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -409,24 +424,9 @@ a {
    *                Telvision/Projector > 1800
    @include respond(break-1800) {}
    *=============================================**/ }
-    .sideNav-allLinks > div:not(:first-child) {
-      margin-top: 2rem; }
     @media (max-width: 53.125em) {
-      .sideNav-allLinks > div:not(:nth-of-type(2)) {
+      .sideNav-link {
         display: none; } }
-  .sideNav-link {
-    position: relative;
-    height: 4.5rem;
-    width: 100%;
-    background-color: #5a5a5a;
-    transform: translateY(0);
-    transition: all 0.3s;
-    transition-delay: transform 0.3s;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
     .sideNav-link:hover {
       background-color: #3c814b; }
     .sideNav-link--text {
@@ -465,7 +465,16 @@ a {
 /**========================================================================
  *                          SUB NAV 
  *========================================================================**/
-#list-chapters {
+.subNav {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.3s;
+  background-color: #464646;
+  transform: translateX(80%);
+  top: 0%;
+  padding: 2rem;
+  width: 40rem;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -499,21 +508,8 @@ a {
    @include respond(break-1800) {}
    *=============================================**/ }
   @media (max-width: 53.125em) {
-    #list-chapters {
-      opacity: 1;
-      width: 100%;
-      transform: translate(0, 0); } }
-
-.subNav {
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.3s;
-  transition-delay: 0.3s;
-  background-color: #464646;
-  transform: translateX(80%);
-  top: 0%;
-  padding: 2rem;
-  width: 40rem; }
+    .subNav {
+      z-index: 10; } }
   .subNav > div:not(:first-child) {
     margin-top: 1rem; }
   .subNav > a:not(:first-child) {
@@ -542,6 +538,11 @@ a {
       font-size: 1.6rem;
       margin-left: 1rem;
       padding: 0.5rem 0; }
+
+.subNav-show {
+  opacity: 1;
+  width: 100%;
+  transform: translate(0, 0); }
 
 /**========================================================================
  *                          CHAPTER TEMPLATE 
@@ -2322,7 +2323,42 @@ a {
   .toc-mainLinks {
     width: 30%;
     display: grid;
-    place-items: center; }
+    place-items: center;
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+    @media (max-width: 53.125em) {
+      .toc-mainLinks {
+        width: 100%; } }
     .toc-mainLinks--container {
       display: flex;
       flex-direction: column; }
@@ -2330,7 +2366,42 @@ a {
     position: relative;
     width: 70%;
     display: grid;
-    place-items: center; }
+    place-items: center;
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+    @media (max-width: 53.125em) {
+      .toc-pieceLinks {
+        display: none; } }
     .toc-pieceLinks--chapters {
       display: flex;
       height: 80%;

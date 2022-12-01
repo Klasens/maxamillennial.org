@@ -35,11 +35,6 @@
     & > div:not(:first-child) {
       margin-top: 2rem;
     }
-    @include respond(break-850) {
-      > div:not(:nth-of-type(2)) {
-        display: none;
-      }
-    }
   }
 
   &-link {
@@ -53,6 +48,9 @@
     cursor: pointer;
     @include center_flex_column;
 
+    @include respond(break-850) {
+      display: none;
+    }
     &:hover {
       background-color: $color-green;
     }
