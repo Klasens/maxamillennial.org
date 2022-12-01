@@ -2101,7 +2101,42 @@ a {
     font-size: 1.5rem;
     cursor: pointer;
     opacity: 1;
-    margin: 3px 0; }
+    margin: 3px 0;
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+    @media (min-width: 100em) {
+      .pieceLink-aphorism {
+        font-size: 2rem; } }
   .pieceLink-poetry {
     border-radius: 5px;
     text-align: center;
@@ -2109,7 +2144,42 @@ a {
     font-size: 1.5rem;
     cursor: pointer;
     opacity: 1;
-    margin: 3px 0; }
+    margin: 3px 0;
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+    @media (min-width: 100em) {
+      .pieceLink-poetry {
+        font-size: 2rem; } }
   .pieceLink-afterLine {
     opacity: 0;
     height: 5rem;
@@ -2160,12 +2230,50 @@ a {
   cursor: pointer; }
 
 .miniContainer-header {
+  z-index: 10;
   width: 100%;
   font-size: 2.5rem;
   padding-left: 1rem;
-  text-align: left;
+  text-align: center;
   text-decoration: underline;
-  background-color: rgba(233, 233, 233, 0.75); }
+  background-color: white;
+  position: sticky;
+  top: 0;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Larger than - 1600
+   @include respond(break-greater-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (min-width: 100em) {
+    .miniContainer-header {
+      font-size: 3.5rem; } }
 
 /**========================================================================
  *                           TABLE OF CONTENTS 
@@ -2267,7 +2375,7 @@ a {
       width: 100%;
       display: flex;
       align-items: center;
-      opacity: 1;
+      opacity: 0;
       justify-content: space-around;
       top: 50%;
       left: 50%;
@@ -2295,14 +2403,11 @@ a {
   border-radius: 10px;
   background-color: rgba(233, 233, 233, 0.5); }
 
-.toc-miniContainer2 {
+.toc-miniContainer {
   width: 30%;
   height: 90%;
   background-color: rgba(233, 233, 233, 0.75);
-  border-radius: 5px; }
-
-.toc-miniContainer {
-  height: 100%;
+  border-radius: 5px;
   overflow: scroll; }
 
 .toc-pieceDisplay {
