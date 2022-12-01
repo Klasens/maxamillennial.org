@@ -2412,8 +2412,8 @@ a {
       transition: opacity 1s; }
     .toc-pieceLinks--fiction {
       position: absolute;
-      height: 100%;
-      width: 100%;
+      height: 90%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       opacity: 1;
