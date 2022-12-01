@@ -473,7 +473,6 @@ a {
   top: 0%;
   padding: 2rem;
   width: 40rem;
-  overflow: scroll;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -508,6 +507,7 @@ a {
    *=============================================**/ }
   @media (max-width: 53.125em) {
     .subNav {
+      overflow: scroll;
       width: 100%;
       height: 100%;
       z-index: 10;
