@@ -8,7 +8,6 @@
   top: 10vh;
   left: 0;
   width: 30rem;
-  height: 90vh;
   border-top: 2px solid $color-gray;
   border-right: 2px solid $color-black;
   border-left: 2px solid $color-black;
@@ -17,6 +16,8 @@
   transition: all 0.3s;
   @include respond(break-850) {
     width: 100%;
+    height: 100%;
+    overflow: scroll;
   }
 
   &-header {

@@ -325,7 +325,6 @@ a {
   top: 10vh;
   left: 0;
   width: 30rem;
-  height: 90vh;
   border-top: 2px solid #969696;
   border-right: 2px solid #333333;
   border-left: 2px solid #333333;
@@ -366,7 +365,9 @@ a {
    *=============================================**/ }
   @media (max-width: 53.125em) {
     .sideNav {
-      width: 100%; } }
+      width: 100%;
+      height: 100%;
+      overflow: scroll; } }
   .sideNav-header {
     color: white;
     width: 100%;
@@ -472,6 +473,7 @@ a {
   top: 0%;
   padding: 2rem;
   width: 40rem;
+  overflow: scroll;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -544,7 +546,6 @@ a {
 .subNav-show {
   opacity: 1;
   width: 100%;
-  height: 100%;
   transform: translate(0, 0); }
 
 /**========================================================================
