@@ -4,8 +4,8 @@ const tocChaptersLink = document.querySelector('#toc-chaptersLink');
 const tocFictionLink = document.querySelector('#toc-fictionLink');
 const tocLFLink = document.querySelector('#toc-LF-NonfictionLink');
 const tocSFLink = document.querySelector('#toc-SF-NonfictionLink');
-const tocAphorismsLink = document.querySelector('#toc-aphorisms');
-const tocPoetryLink = document.querySelector('#toc-poetry');
+const tocAphorismsLink = document.querySelector('#toc-aphorismsLink');
+const tocPoetryLink = document.querySelector('#toc-poetryLink');
 
 // DISPLAYS
 const tocChaptersDisplay = document.querySelector('#toc-chaptersDisplay');
@@ -77,6 +77,14 @@ const showNonfictionSF = function () {
   tocSFNonfictionDisplay.classList.remove('pointerEvents-none');
   tocSFNonfictionDisplay.classList.add('fadeIn-SF1');
 };
+const showAphorisms = function () {
+  tocAphorismsDisplay.classList.add('fadeIn-SF1');
+  tocAphorismsDisplay.classList.remove('pointerEvents-none');
+};
+const showPoems = function () {
+  tocPoetryDisplay.classList.add('fadeIn-SF1');
+  tocPoetryDisplay.classList.remove('pointerEvents-none');
+};
 // HIDE FUNCTIONS
 const hideChapters = function () {
   tocChaptersDisplay.classList.remove('opacity-1');
@@ -113,6 +121,14 @@ const hideNonfictionSF = function () {
   tocSFNonfictionDisplay.classList.add('pointerEvents-none');
   tocSFNonfictionDisplay.classList.remove('fadeIn-SF1');
 };
+const hideAphorisms = function () {
+  tocAphorismsDisplay.classList.remove('fadeIn-SF1');
+  tocAphorismsDisplay.classList.add('pointerEvents-none');
+};
+const hidePoems = function () {
+  tocPoetryDisplay.classList.remove('fadeIn-SF1');
+  tocPoetryDisplay.classList.add('pointerEvents-none');
+};
 
 // EVENT LISTENERS
 tocChaptersLink.addEventListener('click', function () {
@@ -120,13 +136,17 @@ tocChaptersLink.addEventListener('click', function () {
   hideFiction();
   hideNonfictionLF();
   hideNonfictionSF();
+  hideAphorisms();
+  hidePoems();
 });
 
 tocFictionLink.addEventListener('click', function () {
-  hideChapters();
   showFiction();
+  hideChapters();
   hideNonfictionLF();
   hideNonfictionSF();
+  hideAphorisms();
+  hidePoems();
 });
 
 tocLFLink.addEventListener('click', function () {
@@ -134,6 +154,8 @@ tocLFLink.addEventListener('click', function () {
   hideChapters();
   hideFiction();
   hideNonfictionSF();
+  hideAphorisms();
+  hidePoems();
 });
 
 tocSFLink.addEventListener('click', function () {
@@ -141,4 +163,23 @@ tocSFLink.addEventListener('click', function () {
   hideChapters();
   hideFiction();
   hideNonfictionLF();
+  hideAphorisms();
+  hidePoems();
+});
+
+tocAphorismsLink.addEventListener('click', function () {
+  showAphorisms();
+  hideChapters();
+  hideFiction();
+  hideNonfictionLF();
+  hideNonfictionSF();
+  hidePoems();
+});
+tocPoetryLink.addEventListener('click', function () {
+  showPoems();
+  hideChapters();
+  hideFiction();
+  hideNonfictionLF();
+  hideNonfictionSF();
+  hideAphorisms();
 });

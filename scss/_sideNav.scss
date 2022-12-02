@@ -8,7 +8,6 @@
   top: 10vh;
   left: 0;
   width: 30rem;
-  height: 90vh;
   border-top: 2px solid $color-gray;
   border-right: 2px solid $color-black;
   border-left: 2px solid $color-black;
@@ -17,9 +16,12 @@
   transition: all 0.3s;
   @include respond(break-850) {
     width: 100%;
+    height: 100%;
+    overflow: scroll;
   }
 
   &-header {
+    text-align: center;
     color: $color-white;
     width: 100%;
     text-decoration: underline;
@@ -35,11 +37,6 @@
     & > div:not(:first-child) {
       margin-top: 2rem;
     }
-    @include respond(break-850) {
-      > div:not(:nth-of-type(2)) {
-        display: none;
-      }
-    }
   }
 
   &-link {
@@ -53,6 +50,9 @@
     cursor: pointer;
     @include center_flex_column;
 
+    @include respond(break-850) {
+      // display: none;
+    }
     &:hover {
       background-color: $color-green;
     }

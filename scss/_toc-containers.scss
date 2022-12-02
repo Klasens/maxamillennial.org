@@ -22,6 +22,9 @@
     display: grid;
     place-items: center;
 
+    @include respond(break-850) {
+      width: 100%;
+    }
     &--container {
       display: flex;
       flex-direction: column;
@@ -33,6 +36,9 @@
     display: grid;
     place-items: center;
 
+    @include respond(break-850) {
+      display: none;
+    }
     &--chapters {
       display: flex;
       height: 80%;
@@ -42,8 +48,8 @@
     }
     &--fiction {
       position: absolute;
-      height: 100%;
-      width: 100%;
+      height: 90%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       opacity: 1;
@@ -83,7 +89,7 @@
       width: 100%;
       display: flex;
       align-items: center;
-      opacity: 1;
+      opacity: 0;
       justify-content: space-around;
       top: 50%;
       left: 50%;
@@ -114,14 +120,11 @@
   border-radius: 10px;
   background-color: $color-white-opaque-2;
 }
-.toc-miniContainer2 {
+.toc-miniContainer {
   width: 30%;
   height: 90%;
   background-color: $color-white-opaque-3;
   border-radius: 5px;
-}
-.toc-miniContainer {
-  height: 100%;
   overflow: scroll;
 }
 .toc-pieceDisplay {
