@@ -1,0 +1,20 @@
+{
+  "ageOldWisdom": [
+    { "title": "Age Old Wisdom" },
+    {
+      "paragraph": "Shortly after death, people always tell me to live every day like it's my last."
+    },
+    {
+      "paragraph": "But tomorrow I said I'd get lunch with Mom, so can it be the next one?"
+    }
+  ],
+  "charityWork": [
+    { "title": "Charity Work" },
+    {
+      "paragraph": "I will never donate anonymously. Never ever."
+    },
+    {
+      "paragraph": "I'll donate everything I own but never anonymously."
+    }
+  ]
+}

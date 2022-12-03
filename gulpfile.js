@@ -21,7 +21,12 @@ gulp.task('nunjucks', function () {
       )
       .pipe(
         data(function () {
-          return require('./test.json');
+          return require('./aphorisms.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./poems.json');
         })
       )
       .pipe(
