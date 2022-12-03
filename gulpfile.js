@@ -20,6 +20,11 @@ gulp.task('nunjucks', function () {
         })
       )
       .pipe(
+        data(function () {
+          return require('./test.json');
+        })
+      )
+      .pipe(
         nunjucksRender({
           path: ['templates'],
         })
