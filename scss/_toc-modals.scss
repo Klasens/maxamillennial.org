@@ -1,0 +1,84 @@
+/**========================================================================
+ *                           MODALS 
+ *========================================================================**/
+
+.modal {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  min-height: 95%;
+  max-height: min-content;
+  border-radius: 10px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  background-color: $color-white-opaque-4;
+  transition: opacity 0.3s;
+}
+
+.modal-header {
+  margin-top: 1rem;
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-close {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+  background-color: red;
+  cursor: pointer;
+}
+
+.modal-img {
+  height: inherit;
+}
+
+.modal-imgContainer {
+  height: 50rem;
+  margin: 1rem 0;
+}
+
+.modal-text {
+  font-size: 1.8rem;
+}
+
+.modal-textContainer {
+  width: 50%;
+  margin: 1rem 0;
+  height: 20rem;
+  overflow-y: scroll;
+}
+.modal-textContainer > .modal-text:not(:first-child) {
+  margin-top: 1rem;
+}
+
+#partOne .modal-textContainer {
+  height: 90%;
+  overflow: hidden;
+}
+#partTwo .modal-textContainer {
+  height: 90%;
+  overflow: hidden;
+}
+#partThree .modal-textContainer {
+  height: 90%;
+  overflow: hidden;
+}
+#partFour .modal-textContainer {
+  height: 90%;
+  overflow: hidden;
+}
+#partFive .modal-textContainer {
+  height: 90%;
+  overflow: hidden;
+}

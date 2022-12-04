@@ -19,14 +19,19 @@ gulp.task('nunjucks', function () {
           return require('./chapterText.json');
         })
       )
-      .pipe(
+      .pipe( // NOT USED
         data(function () {
           return require('./aphorisms.json');
         })
       )
-      .pipe(
+      .pipe( // NOT USED
         data(function () {
           return require('./poems.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./theGreenerSide.json');
         })
       )
       .pipe(
