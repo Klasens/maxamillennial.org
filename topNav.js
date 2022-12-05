@@ -102,6 +102,7 @@ const showNonfictionList_long = function () {
   }
 
   nonfictionList_long.classList.toggle('opacity-1');
+  nonfictionList_long.classList.remove('pointerEvents-none');
   nonfictionList_long.classList.toggle('z-index-10');
   ddArrowNonfiction_long.classList.toggle('rotateZ-90');
 };
