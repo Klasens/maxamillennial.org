@@ -37,6 +37,10 @@
   right: 10rem;
   background-color: red;
   cursor: pointer;
+  @include respond(break-850) {
+    top: 3rem;
+    right: 3rem;
+  }
 }
 
 .modal-img {
@@ -46,6 +50,9 @@
 .modal-imgContainer {
   height: 50rem;
   margin: 1rem 0;
+  @include respond(break-850) {
+    height: 35rem;
+  }
 }
 
 .modal-text {
@@ -57,6 +64,10 @@
   margin: 1rem 0;
   height: 20rem;
   overflow-y: scroll;
+  @include respond(break-850) {
+    width: 90%;
+    height: 25rem;
+  }
 }
 .modal-textContainer > .modal-text:not(:first-child) {
   margin-top: 1rem;
@@ -65,20 +76,43 @@
 #partOne .modal-textContainer {
   height: 90%;
   overflow: hidden;
+  @include respond(break-850) {
+    overflow: scroll;
+  }
 }
 #partTwo .modal-textContainer {
   height: 90%;
   overflow: hidden;
+  @include respond(break-850) {
+    overflow: scroll;
+  }
 }
 #partThree .modal-textContainer {
   height: 90%;
   overflow: hidden;
+  @include respond(break-850) {
+    overflow: scroll;
+  }
 }
 #partFour .modal-textContainer {
   height: 90%;
   overflow: hidden;
+  @include respond(break-850) {
+    overflow: scroll;
+  }
 }
 #partFive .modal-textContainer {
   height: 90%;
   overflow: hidden;
+  @include respond(break-850) {
+    overflow: scroll;
+  }
+}
+
+#demolitionDerby .modal-textContainer {
+  height: 90%;
+  overflow: hidden;
+  @include respond(break-850) {
+    overflow: scroll;
+  }
 }

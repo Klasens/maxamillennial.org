@@ -143,6 +143,7 @@ const showNonfictionList_short = function () {
     ddArrowReset();
     listReset();
   }
+  nonfictionList_short.classList.remove('pointerEvents-none');
   nonfictionList_short.classList.toggle('opacity-1');
   nonfictionList_short.classList.toggle('z-index-10');
   ddArrowNonfiction_short.classList.toggle('rotateZ-90');

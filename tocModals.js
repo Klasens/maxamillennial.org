@@ -43,6 +43,24 @@ const theDayIDiedAgainBtn = document.querySelector('#sf3');
 const andTodayBtn = document.querySelector('#sf13');
 const theMidwesternRootBtn = document.querySelector('#sf10');
 
+// ---- BTN SELECTORS MOBILE
+const findingZenBtnMobile = document.querySelector('#sfM1');
+const intoTheGrayBtnMobile = document.querySelector('#sfM2');
+const demolitionDerbyBtnMobile = document.querySelector('#sfM3');
+const partOneBtnMobile = document.querySelector('#sfM4');
+const partTwoBtnMobile = document.querySelector('#sfM5');
+const partThreeBtnMobile = document.querySelector('#sfM6');
+const partFourBtnMobile = document.querySelector('#sfM7');
+const partFiveBtnMobile = document.querySelector('#sfM8');
+const endDaysBtnMobile = document.querySelector('#sfM9');
+const momentsInBetweenBtnMobile = document.querySelector('#sfM10');
+const myExistentialRomanceBtnMobile = document.querySelector('#sfM11');
+const theOutsideWitnessBtnMobile = document.querySelector('#sfM12');
+const theReasonsICantFindBtnMobile = document.querySelector('#sfM13');
+const theFeelingOfASoftMindBtnMobile = document.querySelector('#sfM14');
+const theDayIDiedAgainBtnMobile = document.querySelector('#sfM15');
+const andTodayBtnMobile = document.querySelector('#sfM16');
+const theMidwesternRootBtnMobile = document.querySelector('#sfM17');
 // MODAL CLOSE LOOP
 for (let i = 0; i < modalClose.length; i++) {
   modalClose[i].addEventListener('click', function () {
@@ -101,5 +119,60 @@ andTodayBtn.addEventListener('click', function () {
   andToday.classList.add('showModal');
 });
 theMidwesternRootBtn.addEventListener('click', function () {
+  theMidwesternRoot.classList.add('showModal');
+});
+
+// EVENT LISTENERS MOBILE
+findingZenBtnMobile.addEventListener('click', function () {
+  console.log('test');
+  findingZen.classList.add('showModal');
+});
+intoTheGrayBtnMobile.addEventListener('click', function () {
+  intoTheGray.classList.add('showModal');
+});
+demolitionDerbyBtnMobile.addEventListener('click', function () {
+  demolitionDerby.classList.add('showModal');
+});
+partOneBtnMobile.addEventListener('click', function () {
+  partOne.classList.add('showModal');
+});
+partTwoBtnMobile.addEventListener('click', function () {
+  partTwo.classList.add('showModal');
+});
+partThreeBtnMobile.addEventListener('click', function () {
+  partThree.classList.add('showModal');
+});
+partFourBtnMobile.addEventListener('click', function () {
+  partFour.classList.add('showModal');
+});
+partFiveBtnMobile.addEventListener('click', function () {
+  partFive.classList.add('showModal');
+});
+
+endDaysBtnMobile.addEventListener('click', function () {
+  endDays.classList.add('showModal');
+});
+momentsInBetweenBtnMobile.addEventListener('click', function () {
+  momentsInBetween.classList.add('showModal');
+});
+myExistentialRomanceBtnMobile.addEventListener('click', function () {
+  myExistentialRomance.classList.add('showModal');
+});
+theOutsideWitnessBtnMobile.addEventListener('click', function () {
+  theOutsideWitness.classList.add('showModal');
+});
+theReasonsICantFindBtnMobile.addEventListener('click', function () {
+  theReasonsICantFind.classList.add('showModal');
+});
+theFeelingOfASoftMindBtnMobile.addEventListener('click', function () {
+  theFeelingOfASoftMind.classList.add('showModal');
+});
+theDayIDiedAgainBtnMobile.addEventListener('click', function () {
+  theDayIDiedAgain.classList.add('showModal');
+});
+andTodayBtnMobile.addEventListener('click', function () {
+  andToday.classList.add('showModal');
+});
+theMidwesternRootBtnMobile.addEventListener('click', function () {
   theMidwesternRoot.classList.add('showModal');
 });
