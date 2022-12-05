@@ -29,15 +29,81 @@ gulp.task('nunjucks', function () {
         // NOT USED
         data(function () {
           return require('./poems.json');
-        }).pipe(
-          data(function () {
-            return require('./fiction.json');
-          })
-        )
+        })
       )
       .pipe(
         data(function () {
-          return require('./nonfictionLF.json');
+          return require('./nonfictionLFText/anAddictsDesperation.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./nonfictionLFText/anEssayConcerningYou.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./nonfictionLFText/assumptiveCritiques.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./nonfictionLFText/aStrangersStranger.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./nonfictionLFText/aTheoryOfAcknowledgement.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./nonfictionLFText/kingsSoConquered.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./nonfictionLFText/severed.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./nonfictionLFText/anAddictMeetsRachelBloom.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./nonfictionLFText/theSonderer.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./nonfictionLFText/theTimeIMetRachelBloom.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./mitm.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./abw.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./actn.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./potf.json');
+        })
+      )
+      .pipe(
+        data(function () {
+          return require('./tda.json');
         })
       )
       .pipe(
