@@ -8,6 +8,7 @@ const allModals = document.querySelectorAll('.modal');
 // ---- MODAL SELECTORS
 const findingZen = document.querySelector('#findingZen');
 const intoTheGray = document.querySelector('#intoTheGray');
+const demolitionDerby = document.querySelector('#demolitionDerby');
 const partOne = document.querySelector('#partOne');
 const partTwo = document.querySelector('#partTwo');
 const partThree = document.querySelector('#partThree');
@@ -26,6 +27,7 @@ const theMidwesternRoot = document.querySelector('#theMidwesternRoot');
 // ---- BTN SELECTORS
 const findingZenBtn = document.querySelector('#sf4');
 const intoTheGrayBtn = document.querySelector('#sf5');
+const demolitionDerbyBtn = document.querySelector('#sf2');
 const partOneBtn = document.querySelector('#sf15');
 const partTwoBtn = document.querySelector('#sf16');
 const partThreeBtn = document.querySelector('#sf17');
@@ -54,6 +56,9 @@ findingZenBtn.addEventListener('click', function () {
 });
 intoTheGrayBtn.addEventListener('click', function () {
   intoTheGray.classList.add('showModal');
+});
+demolitionDerbyBtn.addEventListener('click', function () {
+  demolitionDerby.classList.add('showModal');
 });
 partOneBtn.addEventListener('click', function () {
   partOne.classList.add('showModal');
