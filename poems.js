@@ -238,7 +238,16 @@ const whoTurnedOutTheLights = [
   'Who Turned Out the Lights',
   "I've started having this uncanny experience. As I walk past or look at the lights, they dim, they flicker, the bite. The bulb breaks, the energy depletes, and I'm left wondering if I've caused this defeat. If I've caused this again, then when will my will upend. I can't escape. Is this a sign of my own demise?",
 ];
-const theWheelIsTurning = ['The Wheel Is Turning', '', ''];
+const theWheelIsTurning = [
+  'The Wheel Is Turning',
+  'Human-Beings thrive on routines.',
+  'From the moment they wake, bake, and are sealed to their fate',
+  'They choose the same choices',
+  'They make the same marks',
+  'They lead the same lives',
+  'This is true until the moment they die.',
+  'The moment devoid of routine; the moment that frees us from our Human-Life-Being.',
+];
 
 // APHORISM EVENT LISTENERS
 fiveTwoOneBtn.addEventListener('click', function () {
