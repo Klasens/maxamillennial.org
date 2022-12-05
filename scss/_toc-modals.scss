@@ -20,6 +20,7 @@
   pointer-events: none;
   background-color: $color-white-opaque-4;
   transition: opacity 0.3s;
+  overflow-x: hidden;
 }
 
 .modal-header {
