@@ -3662,7 +3662,7 @@ a {
    *=============================================**/ }
   @media (max-width: 53.125em) {
     .modal-close {
-      top: 3rem;
+      top: 15rem;
       right: 3rem; } }
 
 .modal-img {
@@ -3705,7 +3705,7 @@ a {
    *=============================================**/ }
   @media (max-width: 53.125em) {
     .modal-imgContainer {
-      height: 35rem; } }
+      height: 25rem; } }
 
 .modal-text {
   font-size: 1.8rem; }
