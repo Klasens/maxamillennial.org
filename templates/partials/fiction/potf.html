@@ -1,0 +1,16 @@
+<!------- STORY CONTENT ------->
+<section class="fiction">
+  <div class="fiction-content">
+    <div id="scrollAdhoc"></div>
+    <div class="title title-content">
+      <h2 class="title-fictionTitle">Politicians of the Future</h2>
+      <span class="title-authorName">By Robert Klasen</span>
+    </div>
+    <div class="fiction-text">
+      <!-- LOOP NJK-->
+      {% for fictionText in politiciansOfTheFuture %}
+      <p class="text">{{fictionText.paragraph}}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>

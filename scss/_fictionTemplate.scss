@@ -1,0 +1,62 @@
+/**========================================================================
+ *                          fiction TEMPLATE 
+ *========================================================================**/
+
+.fiction-content {
+  margin: 0rem auto;
+  padding-bottom: 4rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  @include respond(break-1000) {
+    width: 90%;
+  }
+
+  &::after {
+    z-index: -1;
+    background-image: url(../img/staticNoise.jpg);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.03;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.fiction-text {
+  & > * {
+    margin-top: 3rem;
+  }
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-content {
+  & > h2 {
+    font-size: 7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-black;
+    text-align: center;
+    @include respond(break-greater-1600) {
+      font-size: 10rem;
+    }
+    @include respond(break-1000) {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.title-authorName {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  @include respond(break-1000) {
+    margin-top: 0rem;
+    font-size: 1.7rem;
+  }
+}
