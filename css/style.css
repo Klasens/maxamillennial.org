@@ -414,9 +414,6 @@ a {
    *                Telvision/Projector > 1800
    @include respond(break-1800) {}
    *=============================================**/ }
-      @media (max-width: 53.125em) {
-        .sideNav-allLinks > div:not(:first-child) {
-          margin: 0; } }
   .sideNav-link {
     position: relative;
     height: 4.5rem;
@@ -531,9 +528,6 @@ a {
    *                Telvision/Projector > 1800
    @include respond(break-1800) {}
    *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .sideNav-static {
-      margin: 0; } }
 
 /**========================================================================
  *                          SUB NAV 
