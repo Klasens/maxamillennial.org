@@ -1,10 +1,26 @@
 /**======================================================================== *                           TABLE OF CONTENTS 
  *========================================================================**/
 
+#toc-SFDisplay {
+  @include respond(break-1400) {
+    position: absolute;
+    top: 2rem;
+    width: 90%;
+    & > * {
+      margin-top: 1rem;
+      width: 50%;
+    }
+  }
+}
 #sf1 {
   position: absolute;
   top: 80%;
   left: 35%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf1-line {
   position: absolute;
@@ -19,6 +35,9 @@
     width: 20%;
     top: 71%;
     left: 18%;
+  }
+  @include respond(break-1400) {
+    display: none;
   }
   &--movingBlock {
     position: absolute;
@@ -36,11 +55,22 @@
   top: 35%;
   left: 70%;
   width: 15rem;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 50%;
+  }
 }
 #sf3 {
   position: absolute;
   top: 55%;
   left: 5%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf3-line {
   position: absolute;
@@ -54,6 +84,9 @@
     width: 7%;
     top: 48%;
     left: 5%;
+  }
+  @include respond(break-1400) {
+    display: none;
   }
 
   &--movingBlock {
@@ -70,6 +103,11 @@
   position: absolute;
   top: 5%;
   left: 25%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf4-line {
   position: absolute;
@@ -83,6 +121,9 @@
     width: 12%;
     top: 10%;
     left: 36%;
+  }
+  @include respond(break-1400) {
+    display: none;
   }
 
   &--movingBlock {
@@ -99,6 +140,11 @@
   position: absolute;
   top: 10%;
   left: 50%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf5-line {
   position: absolute;
@@ -112,6 +158,9 @@
     width: 8%;
     top: 14%;
     left: 61%;
+  }
+  @include respond(break-1400) {
+    display: none;
   }
 
   &--movingBlock {
@@ -128,6 +177,11 @@
   position: absolute;
   top: 60%;
   left: 35%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf6-line {
   position: absolute;
@@ -143,6 +197,9 @@
     top: 61%;
     left: 21%;
   }
+  @include respond(break-1400) {
+    display: none;
+  }
   &--movingBlock {
     position: absolute;
     border-radius: 2px;
@@ -157,6 +214,11 @@
   position: absolute;
   top: 90%;
   left: 35%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf7-line {
   position: absolute;
@@ -172,6 +234,9 @@
     top: 76%;
     left: 15%;
   }
+  @include respond(break-1400) {
+    display: none;
+  }
   &--movingBlock {
     position: absolute;
     border-radius: 2px;
@@ -186,6 +251,11 @@
   position: absolute;
   top: 70%;
   left: 35%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf8-line {
   position: absolute;
@@ -199,6 +269,9 @@
     width: 16%;
     top: 66%;
     left: 20%;
+  }
+  @include respond(break-1400) {
+    display: none;
   }
   &--movingBlock {
     position: absolute;
@@ -214,6 +287,11 @@
   position: absolute;
   top: 60%;
   left: 85%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf9-line {
   position: absolute;
@@ -227,6 +305,9 @@
     width: 10%;
     top: 73%;
     left: 80%;
+  }
+  @include respond(break-1400) {
+    display: none;
   }
   &--movingBlock {
     position: absolute;
@@ -242,11 +323,21 @@
   position: absolute;
   top: 35%;
   left: 30%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 #sf11 {
   position: absolute;
   top: 80%;
   left: 70%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf11-line {
   position: absolute;
@@ -255,6 +346,9 @@
   width: 5%;
   top: 15%;
   left: 64%;
+  @include respond(break-1400) {
+    display: none;
+  }
   &--1 {
     transform: rotateZ(37deg);
     width: 15%;
@@ -303,6 +397,20 @@
       left: 51%;
     }
   }
+  @include respond(break-1400) {
+    &--1 {
+      display: none;
+    }
+    &--2 {
+      display: none;
+    }
+    &--3 {
+      display: none;
+    }
+    &--4 {
+      display: none;
+    }
+  }
 
   &--movingBlock {
     position: absolute;
@@ -319,12 +427,22 @@
   position: absolute;
   top: 0;
   left: 0;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 
 #sf13 {
   position: absolute;
   top: 35%;
   left: 5%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf13-line {
   position: absolute;
@@ -337,6 +455,9 @@
     width: 13%;
     top: 38%;
     left: 15%;
+  }
+  @include respond(break-1400) {
+    display: none;
   }
   &--movingBlock {
     position: absolute;
@@ -352,6 +473,11 @@
   position: absolute;
   top: 15%;
   left: 70%;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .sf14-line {
   &--movingBlock {
@@ -377,6 +503,9 @@
     top: 28%;
     left: 73%;
   }
+  @include respond(break-1400) {
+    display: none;
+  }
 }
 .sf14-line--2 {
   position: absolute;
@@ -391,12 +520,21 @@
     top: 12%;
     left: 83%;
   }
+  @include respond(break-1400) {
+    display: none;
+  }
 }
 #sf15 {
   position: absolute;
   top: 5%;
   left: 90%;
   padding: 1rem 2rem;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 0.5rem;
+  }
 }
 
 .sf15-line {
@@ -410,6 +548,9 @@
     width: 4rem;
     transform: rotateZ(90deg);
     top: 3rem;
+  }
+  @include respond(break-1400) {
+    display: none;
   }
   &--special {
     position: absolute;
@@ -451,22 +592,57 @@
   top: 15%;
   left: 90%;
   padding: 1rem 2rem;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 0.5rem;
+  }
 }
 #sf17 {
   position: absolute;
   top: 25%;
   left: 90%;
   padding: 1rem 2rem;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}
+#sf17 {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+  padding: 1rem 2rem;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 0.5rem;
+  }
 }
 #sf18 {
   position: absolute;
   top: 35%;
   left: 90%;
   padding: 1rem 2rem;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 0.5rem;
+  }
 }
 #sf19 {
   position: absolute;
   top: 45%;
   left: 90%;
   padding: 1rem 2rem;
+  @include respond(break-1400) {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 0.5rem;
+  }
 }

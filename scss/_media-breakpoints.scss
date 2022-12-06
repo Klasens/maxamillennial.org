@@ -38,13 +38,13 @@
 
   /**============================================
    *                Monitor Small - 1200
-   @include respond(break-1200) {}
+   @include respond(break-1250) {}
    *=============================================**/
 
-  @if $breakpoint == break-1200 {
-    @media (max-width: 75em) {
+  @if $breakpoint == break-1250 {
+    @media (max-width: 78em) {
       @content;
-    } //1200px
+    } //1250px
   }
 
   /**============================================

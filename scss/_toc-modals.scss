@@ -31,17 +31,38 @@
 }
 
 .modal-close {
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
   position: absolute;
   top: 10rem;
   right: 10rem;
-  background-color: red;
   cursor: pointer;
+  animation: scaleUp 2s infinite linear;
   @include respond(break-850) {
     top: 15rem;
     right: 3rem;
   }
+}
+
+.line-1,
+.line-2 {
+  width: 4rem;
+  margin: 1rem;
+  height: 2px;
+  background-color: $color-red;
+}
+
+.line-1 {
+  position: absolute;
+  top: 25%;
+  transform-origin: bottom;
+  transform: rotate(45deg);
+}
+.line-2 {
+  position: absolute;
+  top: 25%;
+  transform-origin: initial;
+  transform: rotate(-45deg);
 }
 
 .modal-img {
@@ -49,7 +70,7 @@
 }
 
 .modal-imgContainer {
-  height: 50rem;
+  height: 40rem;
   margin: 1rem 0;
   @include respond(break-850) {
     height: 25rem;
@@ -61,10 +82,12 @@
 }
 
 .modal-textContainer {
-  width: 50%;
+  width: 35%;
   margin: 1rem 0;
-  height: 20rem;
+  min-height: 20rem;
+  max-height: 35rem;
   overflow-y: scroll;
+  padding: 1rem 0;
   @include respond(break-850) {
     width: 90%;
     height: 25rem;
@@ -115,5 +138,18 @@
   overflow: hidden;
   @include respond(break-850) {
     overflow: scroll;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }

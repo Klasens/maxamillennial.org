@@ -71,6 +71,9 @@
       flex-direction: column;
       opacity: 0;
       transition: opacity 1s;
+      @include respond(break-1400) {
+        align-items: center;
+      }
     }
 
     &--aphorisms {
