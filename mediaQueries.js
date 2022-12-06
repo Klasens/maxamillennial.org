@@ -72,17 +72,21 @@ tocAphorismsLink.addEventListener('click', function () {
   console.log('test');
   mainLinks.classList.add('width-0');
   pieceLinks.classList.add('width-100');
+  aphorismClose.classList.remove('opacity-0');
 });
 tocPoetryLink.addEventListener('click', function () {
   mainLinks.classList.add('width-0');
   pieceLinks.classList.add('width-100');
+  poemClose.classList.remove('opacity-0');
 });
 
 aphorismClose.addEventListener('click', function () {
   mainLinks.classList.remove('width-0');
   pieceLinks.classList.remove('width-100');
+  aphorismClose.classList.toggle('opacity-0');
 });
 poemClose.addEventListener('click', function () {
   mainLinks.classList.remove('width-0');
   pieceLinks.classList.remove('width-100');
+  poemClose.classList.toggle('opacity-0');
 });
