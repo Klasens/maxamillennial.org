@@ -91,6 +91,16 @@ const showNonfictionList_long = function () {
   ddArrowNonfiction_long.classList.toggle('rotateZ-90');
 };
 
+const showNonfictionList_short = function () {
+  if (!nonfictionList_short.classList.contains('opacity-1')) {
+    ddArrowReset();
+    listReset();
+  }
+
+  nonfictionList_short.classList.toggle('opacity-1');
+  nonfictionList_short.classList.remove('pointerEvents-none');
+  nonfictionList_short.classList.toggle('z-index-10');
+};
 const showShortStoriesList = function () {
   if (!shortStoriesList.classList.contains('opacity-1')) {
     ddArrowReset();
