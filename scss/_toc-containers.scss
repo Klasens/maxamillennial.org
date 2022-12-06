@@ -99,6 +99,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      @include respond(break-850) {
+        flex-direction: column;
+      }
     }
     &--poetry {
       position: absolute;
@@ -111,6 +114,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      @include respond(break-850) {
+        flex-direction: column;
+      }
     }
   }
 }
@@ -143,6 +149,11 @@
   background-color: $color-white-opaque-3;
   border-radius: 5px;
   overflow: scroll;
+  @include respond(break-850) {
+    width: 70%;
+    height: 30%;
+    margin-bottom: 1rem;
+  }
 }
 .toc-pieceDisplay {
   position: relative;
@@ -150,6 +161,12 @@
   height: 90%;
   background-color: $color-white-opaque-3;
   border-radius: 5px;
+  overflow-y: auto;
+  @include respond(break-850) {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 1rem;
+  }
 }
 
 .modal-close--toc {
@@ -160,7 +177,9 @@
   right: 10rem;
   cursor: pointer;
   animation: scaleUp 2s infinite linear;
+  display: none;
   @include respond(break-850) {
+    display: block;
     top: 4rem;
     right: 3rem;
   }
