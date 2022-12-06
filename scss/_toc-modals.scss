@@ -39,7 +39,7 @@
   cursor: pointer;
   animation: scaleUp 2s infinite linear;
   @include respond(break-850) {
-    top: 15rem;
+    top: 0.5rem;
     right: 3rem;
   }
 }

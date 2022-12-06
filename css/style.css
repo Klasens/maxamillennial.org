@@ -5024,7 +5024,7 @@ a {
    *=============================================**/ }
   @media (max-width: 53.125em) {
     .modal-close {
-      top: 15rem;
+      top: 0.5rem;
       right: 3rem; } }
 
 .line-1,
