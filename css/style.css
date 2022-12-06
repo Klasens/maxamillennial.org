@@ -462,6 +462,9 @@ a {
     margin: 4rem auto 0;
     text-align: center; }
 
+.sideNav-static {
+  margin: 2rem 0; }
+
 /**========================================================================
  *                          SUB NAV 
  *========================================================================**/
@@ -554,9 +557,9 @@ a {
 .about {
   position: relative;
   width: 100%;
-  height: 90vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #e9e9e9; }
   .about-mainHeader {
     width: 100%;
     text-align: center;
@@ -570,7 +573,8 @@ a {
     font-size: 4rem;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 2rem 0; }
+    padding: 2rem 0;
+    background-color: #e9e9e9; }
   .about-miniHeader {
     width: 100%;
     text-align: center;
@@ -589,12 +593,14 @@ a {
 .picture-one {
   height: 50rem; }
   .picture-one > img {
+    border: 1px solid #969696;
     border-radius: 3px;
     height: inherit; }
 
 .picture-two {
   height: 50rem; }
   .picture-two > img {
+    border: 1px solid #969696;
     border-radius: 3px;
     height: inherit; }
 
@@ -602,15 +608,17 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem; }
+  padding-bottom: 2rem;
+  background-color: #e9e9e9; }
   .about-content > div:not(:first-child) {
     margin-top: 2rem; }
 
 .about-contact {
-  padding-bottom: 2rem;
+  margin: 2rem 0;
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid #969696; }
+  border-top: 1px solid #969696;
+  border-bottom: 1px solid #969696; }
 
 .contact-socials {
   height: 5rem;
@@ -1170,6 +1178,21 @@ a {
 .text {
   line-height: 2.9rem;
   font-size: 2rem; }
+
+.chapter-footer {
+  height: 10vh;
+  border-top: 1px solid #969696;
+  display: flex;
+  align-items: center; }
+  .chapter-footer--prologue {
+    justify-content: center; }
+  .chapter-footer--standard {
+    justify-content: space-evenly; }
+
+.footer-link {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #0000ee; }
 
 .title-chapterTitle--c1 {
   width: 100% !important; }
@@ -2499,7 +2522,7 @@ a {
   width: 100%;
   text-align: center;
   font-size: 4rem;
-  color: #f20000; }
+  color: black; }
 
 .pieceDisplay-header {
   text-align: center;
@@ -3118,7 +3141,7 @@ a {
   justify-content: center;
   position: absolute;
   top: 10%;
-  left: 15%;
+  left: 50%;
   border-radius: 10px;
   background-color: rgba(233, 233, 233, 0.5); }
 
@@ -3129,7 +3152,7 @@ a {
   justify-content: center;
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 25%;
   border-radius: 10px;
   background-color: rgba(233, 233, 233, 0.5); }
 

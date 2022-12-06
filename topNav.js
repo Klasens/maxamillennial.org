@@ -63,11 +63,7 @@ const fullMenuReset = function () {
 
 const ddArrowReset = function () {
   ddArrowNonfiction_long.classList.remove('rotateZ-90');
-  ddArrowNonfiction_short.classList.remove('rotateZ-90');
   ddArrowShortStories.classList.remove('rotateZ-90');
-  ddArrowArticles.classList.remove('rotateZ-90');
-  ddArrowAphorisms.classList.remove('rotateZ-90');
-  ddArrowPoetry.classList.remove('rotateZ-90');
   ddArrowChapters.classList.remove('rotateZ-90');
 };
 
@@ -81,18 +77,6 @@ const listReset = function () {
   nonfictionList_long.classList.remove('opacity-1');
   nonfictionList_long.classList.remove('z-index-10');
   nonfictionList_long.classList.add('pointerEvents-none');
-  nonfictionList_short.classList.remove('opacity-1');
-  nonfictionList_short.classList.remove('z-index-10');
-  nonfictionList_short.classList.add('pointerEvents-none');
-  aphorismsList.classList.remove('opacity-1');
-  aphorismsList.classList.remove('z-index-10');
-  aphorismsList.classList.add('pointerEvents-none');
-  articlesList.classList.remove('opacity-1');
-  articlesList.classList.remove('z-index-10');
-  articlesList.classList.add('pointerEvents-none');
-  poetryList.classList.remove('opacity-1');
-  poetryList.classList.remove('z-index-10');
-  poetryList.classList.add('pointerEvents-none');
 };
 
 const showNonfictionList_long = function () {
@@ -128,53 +112,11 @@ const showChaptersList = function () {
   chaptersList.classList.toggle('z-index-10');
   ddArrowChapters.classList.toggle('rotateZ-90');
 };
-const showAphorismsList = function () {
-  if (!aphorismsList.classList.contains('opacity-1')) {
-    ddArrowReset();
-    listReset();
-  }
-  aphorismsList.classList.toggle('opacity-1');
-  aphorismsList.classList.toggle('z-index-10');
-  ddArrowAphorisms.classList.toggle('rotateZ-90');
-};
 
-const showNonfictionList_short = function () {
-  if (!nonfictionList_short.classList.contains('opacity-1')) {
-    ddArrowReset();
-    listReset();
-  }
-  nonfictionList_short.classList.remove('pointerEvents-none');
-  nonfictionList_short.classList.toggle('opacity-1');
-  nonfictionList_short.classList.toggle('z-index-10');
-  ddArrowNonfiction_short.classList.toggle('rotateZ-90');
-};
-const showArticlesList = function () {
-  if (!articlesList.classList.contains('opacity-1')) {
-    ddArrowReset();
-    listReset();
-  }
-  articlesList.classList.toggle('opacity-1');
-  articlesList.classList.toggle('z-index-10');
-  ddArrowArticles.classList.toggle('rotateZ-90');
-};
-
-const showPoetryList = function () {
-  if (!poetryList.classList.contains('opacity-1')) {
-    ddArrowReset();
-    listReset();
-  }
-  poetryList.classList.toggle('opacity-1');
-  poetryList.classList.toggle('z-index-10');
-  ddArrowPoetry.classList.toggle('rotateZ-90');
-};
 //EVENT LISTNERS
 hamMenu.addEventListener('click', fullMenuReset);
 hamMenu.addEventListener('click', showSideMenu);
 
 nonfiction_long.addEventListener('click', showNonfictionList_long);
-nonfiction_short.addEventListener('click', showNonfictionList_short);
 shortStories.addEventListener('click', showShortStoriesList);
-aphorisms.addEventListener('click', showAphorismsList);
-articles.addEventListener('click', showArticlesList);
-poetry.addEventListener('click', showPoetryList);
 chapters.addEventListener('click', showChaptersList);

@@ -256,18 +256,18 @@ fiveTwoOneBtn.addEventListener('click', function () {
 aDrugForHumansBtn.addEventListener('click', function () {
   inputPoem(aDrugForHumans);
 });
-doctypeSoulscapeBtn.addEventListener('click', function () {
-  inputPoem(doctypeSoulscape);
-});
+// doctypeSoulscapeBtn.addEventListener('click', function () {
+//   inputPoem(doctypeSoulscape);
+// });
 howCanHeDenyMyPremisesBtn.addEventListener('click', function () {
   inputPoem(howCanHeDenyMyPremises);
 });
 hungerPangsBtn.addEventListener('click', function () {
   inputPoem(hungerPangs);
 });
-mirrorWritingBtn.addEventListener('click', function () {
-  inputPoem(mirrorWriting);
-});
+// mirrorWritingBtn.addEventListener('click', function () {
+//   inputPoem(mirrorWriting);
+// });
 
 oftenTimesBtn.addEventListener('click', function () {
   inputPoem(oftenTimes);
