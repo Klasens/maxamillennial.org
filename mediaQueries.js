@@ -1,4 +1,9 @@
 'use strict';
+// POEMS AND APHORISMS SELECTORS
+const aphorismClose = document.querySelector('#aphorismClose');
+const poemClose = document.querySelector('#poemClose');
+const mainLinks = document.querySelector('.toc-mainLinks');
+const pieceLinks = document.querySelector('.toc-pieceLinks');
 
 const mediaQuery850 = window.matchMedia('(max-width: 850px)');
 function displayChaptersList(mediaQuery850) {
@@ -64,8 +69,20 @@ tocSFLink.addEventListener('click', function () {
   displayNonfictionSFList(mediaQuery850); // Call listener function at run time
 });
 tocAphorismsLink.addEventListener('click', function () {
-  displayAphorismsList(mediaQuery850); // Call listener function at run time
+  console.log('test');
+  mainLinks.classList.add('width-0');
+  pieceLinks.classList.add('width-100');
 });
 tocPoetryLink.addEventListener('click', function () {
-  displayPoetryList(mediaQuery850); // Call listener function at run time
+  mainLinks.classList.add('width-0');
+  pieceLinks.classList.add('width-100');
+});
+
+aphorismClose.addEventListener('click', function () {
+  mainLinks.classList.remove('width-0');
+  pieceLinks.classList.remove('width-100');
+});
+poemClose.addEventListener('click', function () {
+  mainLinks.classList.remove('width-0');
+  pieceLinks.classList.remove('width-100');
 });

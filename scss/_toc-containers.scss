@@ -39,7 +39,7 @@
     place-items: center;
 
     @include respond(break-850) {
-      display: none;
+      width: 0%;
     }
     &--chapters {
       display: flex;
@@ -47,6 +47,9 @@
       flex-direction: column;
       opacity: 0;
       transition: opacity 1s;
+      @include respond(break-850) {
+        display: none;
+      }
     }
     &--fiction {
       position: absolute;
@@ -56,6 +59,9 @@
       flex-direction: column;
       opacity: 1;
       transition: opacity 1s;
+      @include respond(break-850) {
+        display: none;
+      }
     }
     &--LF {
       top: 0;
@@ -64,6 +70,9 @@
       align-items: center;
       opacity: 1;
       transition: opacity 1s;
+      @include respond(break-850) {
+        display: none;
+      }
     }
     &--SF {
       display: flex;
@@ -73,6 +82,9 @@
       transition: opacity 1s;
       @include respond(break-1400) {
         align-items: center;
+      }
+      @include respond(break-850) {
+        display: none;
       }
     }
 
@@ -138,4 +150,26 @@
   height: 90%;
   background-color: $color-white-opaque-3;
   border-radius: 5px;
+}
+
+.modal-close--toc {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+  cursor: pointer;
+  animation: scaleUp 2s infinite linear;
+  @include respond(break-850) {
+    top: 4rem;
+    right: 3rem;
+  }
+}
+
+.line-1,
+.line-2 {
+  width: 4rem;
+  margin: 1rem;
+  height: 2px;
+  background-color: $color-red;
 }

@@ -41,6 +41,7 @@ const f3 = document.querySelector('#f3');
 const f4 = document.querySelector('#f4');
 const f5 = document.querySelector('#f5');
 
+
 // SHOW FUNCTIONS
 const showChapters = function () {
   tocChaptersDisplay.classList.add('opacity-1');
