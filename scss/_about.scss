@@ -38,12 +38,19 @@
 
   &-text {
     width: 50%;
+    @include respond(break-850) {
+      width: 90%;
+    }
   }
 }
 .pictures {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  @include respond(break-850) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .picture-one {
@@ -54,6 +61,10 @@
     border-radius: 3px;
     height: inherit;
   }
+  @include respond(break-850) {
+    height: 25rem;
+    margin-bottom: 1rem;
+  }
 }
 .picture-two {
   height: 50rem;
@@ -62,6 +73,9 @@
     border: 1px solid $color-gray;
     border-radius: 3px;
     height: inherit;
+  }
+  @include respond(break-850) {
+    height: 25rem;
   }
 }
 
