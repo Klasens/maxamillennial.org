@@ -36,6 +36,9 @@
 
     & > div:not(:first-child) {
       margin-top: 2rem;
+      @include respond(break-850) {
+        margin: 0;
+      }
     }
   }
 
@@ -103,4 +106,7 @@
 
 .sideNav-static {
   margin: 2rem 0;
+  @include respond(break-850) {
+    margin: 0;
+  }
 }
