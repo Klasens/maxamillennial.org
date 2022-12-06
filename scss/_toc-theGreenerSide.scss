@@ -322,7 +322,7 @@
 #sf10 {
   position: absolute;
   top: 35%;
-  left: 30%;
+  left: 35%;
   @include respond(break-1400) {
     position: relative;
     top: auto;
@@ -437,7 +437,7 @@
 #sf13 {
   position: absolute;
   top: 35%;
-  left: 5%;
+  left: 0%;
   @include respond(break-1400) {
     position: relative;
     top: auto;
@@ -448,13 +448,13 @@
   position: absolute;
   background-color: $color-white-opaque;
   height: 4px;
-  width: 11%;
+  width: 12%;
   top: 38%;
-  left: 17%;
+  left: 20%;
   @include respond(break-greater-1600) {
     width: 13%;
     top: 38%;
-    left: 15%;
+    left: 18%;
   }
   @include respond(break-1400) {
     display: none;
@@ -473,6 +473,12 @@
   position: absolute;
   top: 15%;
   left: 70%;
+  background-color: $color-light-green;
+  cursor: none;
+  &:hover {
+    background-color: $color-light-green;
+    cursor: not-allowed;
+  }
   @include respond(break-1400) {
     position: relative;
     top: auto;
