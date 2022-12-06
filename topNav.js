@@ -77,6 +77,9 @@ const listReset = function () {
   nonfictionList_long.classList.remove('opacity-1');
   nonfictionList_long.classList.remove('z-index-10');
   nonfictionList_long.classList.add('pointerEvents-none');
+  nonfictionList_short.classList.remove('opacity-1');
+  nonfictionList_short.classList.remove('z-index-10');
+  nonfictionList_short.classList.add('pointerEvents-none');
 };
 
 const showNonfictionList_long = function () {
