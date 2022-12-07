@@ -21,7 +21,9 @@ const theOutsideWitness = document.querySelector('#theOutsideWitness');
 const theReasonsICantFind = document.querySelector('#theReasonsICantFind');
 const theFeelingOfASoftMind = document.querySelector('#theFeelingOfASoftMind');
 const theDayIDiedAgain = document.querySelector('#theDayIDiedAgain');
-const andToday = document.querySelector('#andToday');
+const theWheelIsTurningModal = document.querySelector(
+  '#theWheelIsTurningModal'
+);
 const theMidwesternRoot = document.querySelector('#theMidwesternRoot');
 
 // ---- BTN SELECTORS
@@ -40,7 +42,7 @@ const theOutsideWitnessBtn = document.querySelector('#sf8');
 const theReasonsICantFindBtn = document.querySelector('#sf1');
 const theFeelingOfASoftMindBtn = document.querySelector('#sf7');
 const theDayIDiedAgainBtn = document.querySelector('#sf3');
-const andTodayBtn = document.querySelector('#sf13');
+const theWheelIsTurningModalBtn = document.querySelector('#sf13');
 const theMidwesternRootBtn = document.querySelector('#sf10');
 
 // ---- BTN SELECTORS MOBILE
@@ -59,7 +61,7 @@ const theOutsideWitnessBtnMobile = document.querySelector('#sfM12');
 const theReasonsICantFindBtnMobile = document.querySelector('#sfM13');
 const theFeelingOfASoftMindBtnMobile = document.querySelector('#sfM14');
 const theDayIDiedAgainBtnMobile = document.querySelector('#sfM15');
-const andTodayBtnMobile = document.querySelector('#sfM16');
+const theWheelIsTurningModalBtnMobile = document.querySelector('#sfM16');
 const theMidwesternRootBtnMobile = document.querySelector('#sfM17');
 // MODAL CLOSE LOOP
 for (let i = 0; i < modalClose.length; i++) {
@@ -115,8 +117,8 @@ theFeelingOfASoftMindBtn.addEventListener('click', function () {
 theDayIDiedAgainBtn.addEventListener('click', function () {
   theDayIDiedAgain.classList.add('showModal');
 });
-andTodayBtn.addEventListener('click', function () {
-  andToday.classList.add('showModal');
+theWheelIsTurningModalBtn.addEventListener('click', function () {
+  theWheelIsTurningModal.classList.add('showModal');
 });
 theMidwesternRootBtn.addEventListener('click', function () {
   theMidwesternRoot.classList.add('showModal');
@@ -170,8 +172,8 @@ theFeelingOfASoftMindBtnMobile.addEventListener('click', function () {
 theDayIDiedAgainBtnMobile.addEventListener('click', function () {
   theDayIDiedAgain.classList.add('showModal');
 });
-andTodayBtnMobile.addEventListener('click', function () {
-  andToday.classList.add('showModal');
+theWheelIsTurningModalBtnMobile.addEventListener('click', function () {
+  theWheelIsTurningModal.classList.add('showModal');
 });
 theMidwesternRootBtnMobile.addEventListener('click', function () {
   theMidwesternRoot.classList.add('showModal');

@@ -139,9 +139,12 @@
   justify-content: center;
   position: absolute;
   top: 10%;
-  left: 25%;
+  left: 15%;
   border-radius: 10px;
   background-color: $color-white-opaque-2;
+  @include respond(break-greater-1600) {
+    left: 25%;
+  }
 }
 .toc-miniContainer {
   width: 30%;
