@@ -2663,10 +2663,10 @@ a {
    *=============================================**/ }
   @media (max-width: 87.5em) {
     .toc-title--mainHead {
-      font-size: 6rem; } }
+      font-size: 8rem; } }
   @media (max-width: 53.125em) {
     .toc-title--mainHead {
-      font-size: 4rem; } }
+      font-size: 3rem; } }
 
 .toc-title--subHead {
   font-size: 8rem;
