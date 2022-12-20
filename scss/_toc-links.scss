@@ -19,13 +19,13 @@
   width: 75%;
   text-align: center;
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: $color-chocolate-opaque-2;
 
   @include respond(break-850) {
-    width: max-content;
+    width: 90%;
     display: block;
   }
 }

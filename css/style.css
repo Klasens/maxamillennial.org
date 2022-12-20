@@ -2550,7 +2550,7 @@ a {
   width: 75%;
   text-align: center;
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(67, 62, 60, 0.4);
@@ -2588,7 +2588,7 @@ a {
    *=============================================**/ }
   @media (max-width: 53.125em) {
     .toc-title--mobile {
-      width: max-content;
+      width: 90%;
       display: block; } }
 
 .toc-title--mainHead {
