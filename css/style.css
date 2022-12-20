@@ -2663,7 +2663,7 @@ a {
    *=============================================**/ }
   @media (max-width: 87.5em) {
     .toc-title--mainHead {
-      font-size: 8rem; } }
+      font-size: 6rem; } }
   @media (max-width: 53.125em) {
     .toc-title--mainHead {
       font-size: 4rem; } }

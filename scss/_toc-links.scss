@@ -36,7 +36,7 @@
   text-transform: uppercase;
   color: $color-white;
   @include respond(break-1400) {
-    font-size: 8rem;
+    font-size: 6rem;
   }
   @include respond(break-850) {
     font-size: 4rem;
