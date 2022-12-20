@@ -14,6 +14,7 @@ const tocLFNonfictionDisplay = document.querySelector('#toc-LFDisplay');
 const tocSFNonfictionDisplay = document.querySelector('#toc-SFDisplay');
 const tocAphorismsDisplay = document.querySelector('#toc-aphorismsDisplay');
 const tocPoetryDisplay = document.querySelector('#toc-poetryDisplay');
+const tocTitle = document.querySelector('.toc-title');
 
 // SUB DISPLAYS
 const tocLFSet1 = document.querySelector('.toc-set1--LF');
@@ -130,6 +131,11 @@ const hidePoems = function () {
   tocPoetryDisplay.classList.add('pointerEvents-none');
 };
 
+const hideTitle = function () {
+  tocTitle.classList.remove('fadeIn-SF1');
+  tocTitle.classList.add('pointerEvents-none');
+};
+
 // EVENT LISTENERS
 tocChaptersLink.addEventListener('click', function () {
   showChapters();
@@ -138,6 +144,7 @@ tocChaptersLink.addEventListener('click', function () {
   hideNonfictionSF();
   hideAphorisms();
   hidePoems();
+  hideTitle();
 });
 
 tocFictionLink.addEventListener('click', function () {
@@ -147,6 +154,7 @@ tocFictionLink.addEventListener('click', function () {
   hideNonfictionSF();
   hideAphorisms();
   hidePoems();
+  hideTitle();
 });
 
 tocLFLink.addEventListener('click', function () {
@@ -156,6 +164,7 @@ tocLFLink.addEventListener('click', function () {
   hideNonfictionSF();
   hideAphorisms();
   hidePoems();
+  hideTitle();
 });
 
 tocSFLink.addEventListener('click', function () {
@@ -165,6 +174,7 @@ tocSFLink.addEventListener('click', function () {
   hideNonfictionLF();
   hideAphorisms();
   hidePoems();
+  hideTitle();
 });
 
 tocAphorismsLink.addEventListener('click', function () {
@@ -174,6 +184,7 @@ tocAphorismsLink.addEventListener('click', function () {
   hideNonfictionLF();
   hideNonfictionSF();
   hidePoems();
+  hideTitle();
 });
 tocPoetryLink.addEventListener('click', function () {
   showPoems();
@@ -182,4 +193,5 @@ tocPoetryLink.addEventListener('click', function () {
   hideNonfictionLF();
   hideNonfictionSF();
   hideAphorisms();
+  hideTitle();
 });

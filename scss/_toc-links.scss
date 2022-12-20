@@ -2,6 +2,59 @@
  *                           TABLE OF CONTENTS 
  *========================================================================**/
 
+.toc-title {
+  width: 75%;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $color-chocolate-opaque-2;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.toc-title--mobile {
+  display: none;
+  width: 75%;
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $color-chocolate-opaque-2;
+
+  @include respond(break-850) {
+    width: max-content;
+    display: block;
+  }
+}
+.toc-title--mainHead {
+  margin-bottom: 2rem;
+  font-size: 11rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $color-white;
+  @include respond(break-1400) {
+    font-size: 8rem;
+  }
+  @include respond(break-850) {
+    font-size: 4rem;
+  }
+}
+.toc-title--subHead {
+  font-size: 8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $color-white;
+  @include respond(break-1400) {
+    font-size: 5rem;
+  }
+  @include respond(break-850) {
+    font-size: 2rem;
+  }
+}
+
 .mainLink {
   color: $color-black;
   background-color: $color-white-opaque;
