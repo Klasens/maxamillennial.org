@@ -8,107 +8,143 @@ function defaultTask(cb) {
   cb();
 }
 
-gulp.task('nunjucks', function () {
+gulp.task('nunjucks-chapters', function () {
   // Gets .html and .nunjucks files in pages
   return (
     gulp
-      .src('pages/**/*.+(html|njk)')
+      .src('pages/chapters/**.+(html|njk)')
       // Renders template with nunjucks
       .pipe(
         data(function () {
-          return require('./chapterText.json');
+          return require('./json/chapterText.json');
         })
       )
       .pipe(
-        // NOT USED
-        data(function () {
-          return require('./aphorisms.json');
+        nunjucksRender({
+          path: ['templates'],
         })
       )
-      .pipe(
-        // NOT USED
-        data(function () {
-          return require('./poems.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./nonfictionLFText/anAddictsDesperation.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./nonfictionLFText/anEssayConcerningYou.json');
-        })
-      )
+      // output files in main folder
+      .pipe(gulp.dest('./mm/chapters/'))
+  );
+});
+
+gulp.task('nunjucks-nonfictionLF', function () {
+  // Gets .html and .nunjucks files in pages
+  return (
+    gulp
+      .src('pages/nonfictionLF/**.+(html|njk)')
+      // Renders template with nunjucks
       .pipe(
         data(function () {
-          return require('./nonfictionLFText/assumptiveCritiques.json');
+          return require('./json/nonfictionLFText/anAddictsDesperation.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./nonfictionLFText/aStrangersStranger.json');
+          return require('./json/nonfictionLFText/anEssayConcerningYou.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./nonfictionLFText/aTheoryOfAcknowledgement.json');
+          return require('./json/nonfictionLFText/assumptiveCritiques.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./nonfictionLFText/kingsSoConquered.json');
+          return require('./json/nonfictionLFText/aStrangersStranger.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./nonfictionLFText/severed.json');
+          return require('./json/nonfictionLFText/aTheoryOfAcknowledgement.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./nonfictionLFText/anAddictMeetsRachelBloom.json');
+          return require('./json/nonfictionLFText/kingsSoConquered.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./nonfictionLFText/theSonderer.json');
+          return require('./json/nonfictionLFText/severed.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./nonfictionLFText/theTimeIMetRachelBloom.json');
+          return require('./json/nonfictionLFText/anAddictMeetsRachelBloom.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./mitm.json');
+          return require('./json/nonfictionLFText/theSonderer.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./abw.json');
+          return require('./json/nonfictionLFText/theTimeIMetRachelBloom.json');
+        })
+      )
+      .pipe(
+        nunjucksRender({
+          path: ['templates'],
+        })
+      )
+      // output files in main folder
+      .pipe(gulp.dest('./mm/nonfiction/'))
+  );
+});
+
+gulp.task('nunjucks-fiction', function () {
+  // Gets .html and .nunjucks files in pages
+  return (
+    gulp
+      .src('pages/fiction/*.+(html|njk)')
+      // Renders template with nunjucks
+      .pipe(
+        data(function () {
+          return require('./json/mitm.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./actn.json');
+          return require('./json/abw.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./potf.json');
+          return require('./json/actn.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./tda.json');
+          return require('./json/potf.json');
         })
       )
       .pipe(
         data(function () {
-          return require('./theGreenerSide.json');
+          return require('./json/tda.json');
+        })
+      )
+      .pipe(
+        nunjucksRender({
+          path: ['templates'],
+        })
+      )
+      // output files in main folder
+      .pipe(gulp.dest('./mm/fiction/'))
+  );
+});
+
+gulp.task('nunjucks-index', function () {
+  // Gets .html and .nunjucks files in pages
+  return (
+    gulp
+      .src('pages/index.html')
+      // Renders template with nunjucks
+      .pipe(
+        data(function () {
+          return require('./json/theGreenerSide.json');
         })
       )
       .pipe(
@@ -118,6 +154,22 @@ gulp.task('nunjucks', function () {
       )
       // output files in main folder
       .pipe(gulp.dest('./'))
+  );
+});
+
+gulp.task('nunjucks', function () {
+  // Gets .html and .nunjucks files in pages
+  return (
+    gulp
+      .src('pages/about.html')
+      // Renders template with nunjucks
+      .pipe(
+        nunjucksRender({
+          path: ['templates'],
+        })
+      )
+      // output files in main folder
+      .pipe(gulp.dest('./mm'))
   );
 });
 

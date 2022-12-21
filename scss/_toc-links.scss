@@ -12,6 +12,9 @@
   background-color: $color-chocolate-opaque-2;
   opacity: 0;
   transition: opacity 0.5s;
+  @include respond(break-1600) {
+    top: 10%;
+  }
 }
 
 .toc-title--mobile {
