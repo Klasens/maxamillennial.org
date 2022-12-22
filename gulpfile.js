@@ -1,174 +1,131 @@
-'use strict';
+'Use strict';
+// ==== Requirements ==== //
 const gulp = require('gulp');
 const nunjucksRender = require('gulp-nunjucks-render');
 const data = require('gulp-data');
+const fs = require('fs');
+const path = require('path');
 
+// ==== Defualt Task ==== //
 function defaultTask(cb) {
-  // place code for your default task here
   cb();
 }
 
+// ==== Build Chapters ==== //
 gulp.task('nunjucks-chapters', function () {
-  // Gets .html and .nunjucks files in pages
   return (
     gulp
-      .src('pages/chapters/**.+(html|njk)')
-      // Renders template with nunjucks
+      // -- Collect chapters from pages
+      .src('pages/chapters/**.html)')
+      // -- Collect text from .json files
       .pipe(
         data(function () {
           return require('./json/chapterText.json');
         })
       )
+      // -- Compile partials from templates
       .pipe(
         nunjucksRender({
           path: ['templates'],
         })
       )
-      // output files in main folder
+      // -- Output files to chapters folder
       .pipe(gulp.dest('./mm/chapters/'))
   );
 });
 
-gulp.task('nunjucks-nonfictionLF', function () {
-  // Gets .html and .nunjucks files in pages
+// ==== Build Nonfiction ==== //
+gulp.task('nunjucks-nonfiction', function () {
   return (
     gulp
-      .src('pages/nonfictionLF/**.+(html|njk)')
-      // Renders template with nunjucks
+      // -- Collect Nonfiction from pages
+      .src('pages/nonfiction/**.html')
+      // -- Collect text from .json files
+      //TODO -- Using Adhoc read method by changing all files in JSON folder to .html.json
       .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/anAddictsDesperation.json');
+        data(function (file) {
+          return JSON.parse(
+            fs.readFileSync(
+              './json/nonfictionText/' + path.basename(file.path + '.json')
+            )
+          );
         })
       )
-      .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/anEssayConcerningYou.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/assumptiveCritiques.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/aStrangersStranger.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/aTheoryOfAcknowledgement.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/kingsSoConquered.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/severed.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/anAddictMeetsRachelBloom.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/theSonderer.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/nonfictionLFText/theTimeIMetRachelBloom.json');
-        })
-      )
+      // -- Compile partials from templates
       .pipe(
         nunjucksRender({
           path: ['templates'],
         })
       )
-      // output files in main folder
+      // -- Output files to nonfiction folder
       .pipe(gulp.dest('./mm/nonfiction/'))
   );
 });
 
+// ==== Build Fiction ==== //
 gulp.task('nunjucks-fiction', function () {
-  // Gets .html and .nunjucks files in pages
   return (
     gulp
-      .src('pages/fiction/*.+(html|njk)')
-      // Renders template with nunjucks
+      // -- Collect Fiction from pages
+      .src('pages/fiction/*.html')
+      // -- Collect text from .json files
+      //TODO -- Using Adhoc read method by changing all files in JSON folder to '.html.json'
       .pipe(
-        data(function () {
-          return require('./json/mitm.json');
+        data(function (file) {
+          return JSON.parse(
+            fs.readFileSync(
+              './json/fictionText/' + path.basename(file.path + '.json')
+            )
+          );
         })
       )
-      .pipe(
-        data(function () {
-          return require('./json/abw.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/actn.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/potf.json');
-        })
-      )
-      .pipe(
-        data(function () {
-          return require('./json/tda.json');
-        })
-      )
+      // -- Compile partials from templates
       .pipe(
         nunjucksRender({
           path: ['templates'],
         })
       )
-      // output files in main folder
+      // -- Output files to fiction folder
       .pipe(gulp.dest('./mm/fiction/'))
   );
 });
 
+// ==== Build Index ==== //
 gulp.task('nunjucks-index', function () {
-  // Gets .html and .nunjucks files in pages
   return (
     gulp
+      // -- Collect Index from pages
       .src('pages/index.html')
-      // Renders template with nunjucks
+      // -- Collect text from .json files
       .pipe(
         data(function () {
           return require('./json/theGreenerSide.json');
         })
       )
+      // -- Compile partials from templates
       .pipe(
         nunjucksRender({
           path: ['templates'],
         })
       )
-      // output files in main folder
+      // -- Output files to root folder
       .pipe(gulp.dest('./'))
   );
 });
 
-gulp.task('nunjucks', function () {
-  // Gets .html and .nunjucks files in pages
+// ==== Build About ==== //
+gulp.task('nunjucks-about', function () {
   return (
     gulp
+      // -- Collect About from pages
       .src('pages/about.html')
-      // Renders template with nunjucks
+      // -- Compile partials from templates
       .pipe(
         nunjucksRender({
           path: ['templates'],
         })
       )
-      // output files in main folder
+      // -- Output files to mm folder
       .pipe(gulp.dest('./mm'))
   );
 });
