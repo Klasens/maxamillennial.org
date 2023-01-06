@@ -11,6 +11,7 @@
   transform: translateX(-50%);
   background-color: $color-chocolate-opaque-2;
   opacity: 0;
+  border-radius: 15px;
   transition: opacity 0.5s;
   @include respond(break-1600) {
     top: 10%;

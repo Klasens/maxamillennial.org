@@ -16,7 +16,7 @@ gulp.task('nunjucks-chapters', function () {
   return (
     gulp
       // -- Collect chapters from pages
-      .src('pages/chapters/**.html)')
+      .src('pages/chapters/**.html')
       // -- Collect text from .json files
       .pipe(
         data(function () {
