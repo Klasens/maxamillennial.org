@@ -6638,7 +6638,7 @@ a {
   @media (max-width: 37.5em) {
     .modal-landing {
       width: 35rem;
-      top: 50%;
+      top: 55%;
       padding: 1rem 2rem; } }
 
 .modal__details {
