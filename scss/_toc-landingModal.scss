@@ -38,6 +38,9 @@
   @include respond(break-850) {
     width: 45rem;
   }
+  @include respond(break-600) {
+    width: 35rem;
+  }
 }
 
 .modal__details {
@@ -46,6 +49,10 @@
   margin-bottom: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
+  @include respond(break-600) {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .modal__title {
@@ -65,6 +72,9 @@
 
   font-size: 1.7rem;
   line-height: 2;
+  @include respond(break-600) {
+    padding: 0 1rem;
+  }
 }
 
 .modal__text::before {
