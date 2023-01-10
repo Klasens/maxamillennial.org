@@ -4,6 +4,10 @@
 // ---- ALL SELECTORS
 const modalClose = document.querySelectorAll('.modal-close');
 const allModals = document.querySelectorAll('.modal');
+const allModalBtns = document.querySelectorAll('.modalBtn');
+
+// --- Outer Modal
+const outerModal = document.querySelector('.pageContainer');
 
 // ---- MODAL SELECTORS
 const findingZen = document.querySelector('#findingZen');
@@ -69,6 +73,28 @@ for (let i = 0; i < modalClose.length; i++) {
     allModals[i].classList.remove('showModal');
   });
 }
+for (let i = 0; i < allModalBtns.length; i++) {
+  allModalBtns[i].addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    // e.stopImmediatePropagation();
+  });
+}
+for (let i = 0; i < allModals.length; i++) {
+  allModals[i].addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+  });
+}
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    for (let i = 0; i < allModals.length; i++) {
+      allModals[i].classList.remove('showModal');
+    }
+  }
+});
 
 // EVENT LISTENERS
 findingZenBtn.addEventListener('click', function () {
@@ -177,4 +203,24 @@ theWheelIsTurningModalBtnMobile.addEventListener('click', function () {
 });
 theMidwesternRootBtnMobile.addEventListener('click', function () {
   theMidwesternRoot.classList.add('showModal');
+});
+
+outerModal.addEventListener('click', function () {
+  findingZen.classList.remove('showModal');
+  intoTheGray.classList.remove('showModal');
+  demolitionDerby.classList.remove('showModal');
+  partOne.classList.remove('showModal');
+  partTwo.classList.remove('showModal');
+  partThree.classList.remove('showModal');
+  partFour.classList.remove('showModal');
+  partFive.classList.remove('showModal');
+  endDays.classList.remove('showModal');
+  momentsInBetween.classList.remove('showModal');
+  myExistentialRomance.classList.remove('showModal');
+  theOutsideWitness.classList.remove('showModal');
+  theReasonsICantFind.classList.remove('showModal');
+  theFeelingOfASoftMind.classList.remove('showModal');
+  theDayIDiedAgain.classList.remove('showModal');
+  theWheelIsTurningModal.classList.remove('showModal');
+  theMidwesternRoot.classList.remove('showModal');
 });
