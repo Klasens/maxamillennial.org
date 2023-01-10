@@ -3,12 +3,12 @@ const landingModalContainer = document.querySelector('.modal-container');
 const landingModalClose = document.querySelector('.link-2');
 const topNavTitle = document.querySelector('.topNav-title');
 
-window.localStorage.setItem('key', 'modal');
-
 if (window.localStorage.getItem('key')) {
   landingModal.classList.remove('showModal');
   landingModalContainer.classList.remove('showModal');
   landingModalContainer.classList.add('pointerEvents-none');
+} else {
+  window.localStorage.setItem('key', 'modal');
 }
 topNavTitle.addEventListener('click', function (e) {
   e.preventDefault();
