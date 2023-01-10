@@ -6637,7 +6637,8 @@ a {
       width: 45rem; } }
   @media (max-width: 37.5em) {
     .modal-landing {
-      width: 35rem; } }
+      width: 35rem;
+      top: 60%; } }
 
 .modal__details {
   text-align: center;
