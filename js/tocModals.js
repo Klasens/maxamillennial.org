@@ -5,6 +5,7 @@
 const modalClose = document.querySelectorAll('.modal-close');
 const allModals = document.querySelectorAll('.modal');
 const allModalBtns = document.querySelectorAll('.modalBtn');
+const allMobileModalBtns = document.querySelectorAll('.modal-mobile');
 
 // --- Outer Modal
 const outerModal = document.querySelector('.pageContainer');
@@ -75,6 +76,13 @@ for (let i = 0; i < modalClose.length; i++) {
 }
 for (let i = 0; i < allModalBtns.length; i++) {
   allModalBtns[i].addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    // e.stopImmediatePropagation();
+  });
+}
+for (let i = 0; i < allMobileModalBtns.length; i++) {
+  allMobileModalBtns[i].addEventListener('click', function (e) {
     e.preventDefault();
     e.stopPropagation();
     // e.stopImmediatePropagation();
